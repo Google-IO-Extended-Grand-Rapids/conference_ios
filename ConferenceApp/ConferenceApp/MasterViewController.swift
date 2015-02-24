@@ -25,9 +25,9 @@ class MasterViewController: UITableViewController {
         let addButton = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: "insertNewObject:")
         self.navigationItem.rightBarButtonItem = addButton
         
-        insertNewObject("hey")
-        insertNewObject("hey")
-        insertNewObject("hey")
+        insertNewObject(String("Hey"))
+        insertNewObject(String("Hey"))
+        insertNewObject(String("Hey"))
     }
 
     override func didReceiveMemoryWarning() {
@@ -36,7 +36,14 @@ class MasterViewController: UITableViewController {
     }
 
     func insertNewObject(sender: AnyObject) {
-        objects.insertObject(NSDate(), atIndex: 0)
+        let y = sender as? String
+        
+        if (y != nil) {
+            objects.insertObject(sender, atIndex: 0)
+        } else {
+            objects.insertObject(NSDate().description, atIndex: 0)
+        }
+        
         let indexPath = NSIndexPath(forRow: 0, inSection: 0)
         self.tableView.insertRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
     }
@@ -46,7 +53,7 @@ class MasterViewController: UITableViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "showDetail" {
             if let indexPath = self.tableView.indexPathForSelectedRow() {
-                let object = objects[indexPath.row] as NSDate
+                let object = objects[indexPath.row] as String
             (segue.destinationViewController as DetailViewController).detailItem = object
             }
         }
@@ -65,8 +72,8 @@ class MasterViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as UITableViewCell
 
-        let object = objects[indexPath.row] as NSDate
-        cell.textLabel!.text = object.description
+        let object = objects[indexPath.row] as String
+        cell.textLabel!.text = object
         return cell
     }
 
