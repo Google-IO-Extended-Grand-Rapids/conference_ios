@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3776C5311AABB9D500E676C4 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3776C5301AABB9D500E676C4 /* ExploreViewController.swift */; };
 		3776C5341AABBA8300E676C4 /* EventDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3776C5331AABBA8300E676C4 /* EventDetailsViewController.swift */; };
+		3776C5371AABBCA100E676C4 /* Conference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3776C5361AABBCA100E676C4 /* Conference.swift */; };
 		3781C2A11A79E99D00ADF981 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3781C2A01A79E99D00ADF981 /* AppDelegate.swift */; };
 		3781C2A81A79E99D00ADF981 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3781C2A61A79E99D00ADF981 /* Main.storyboard */; };
 		3781C2AA1A79E99D00ADF981 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3781C2A91A79E99D00ADF981 /* Images.xcassets */; };
@@ -29,6 +30,7 @@
 /* Begin PBXFileReference section */
 		3776C5301AABB9D500E676C4 /* ExploreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
 		3776C5331AABBA8300E676C4 /* EventDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDetailsViewController.swift; sourceTree = "<group>"; };
+		3776C5361AABBCA100E676C4 /* Conference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Conference.swift; sourceTree = "<group>"; };
 		3781C29B1A79E99D00ADF981 /* ConferenceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConferenceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3781C29F1A79E99D00ADF981 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3781C2A01A79E99D00ADF981 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +69,14 @@
 			name = Controllers;
 			sourceTree = "<group>";
 		};
+		3776C5351AABBC9300E676C4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3776C5361AABBCA100E676C4 /* Conference.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		3781C2921A79E99D00ADF981 = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +98,7 @@
 		3781C29D1A79E99D00ADF981 /* ConferenceApp */ = {
 			isa = PBXGroup;
 			children = (
+				3776C5351AABBC9300E676C4 /* Models */,
 				3776C5321AABB9DB00E676C4 /* Controllers */,
 				3781C2A01A79E99D00ADF981 /* AppDelegate.swift */,
 				3781C2A61A79E99D00ADF981 /* Main.storyboard */,
@@ -226,6 +237,7 @@
 				3776C5341AABBA8300E676C4 /* EventDetailsViewController.swift in Sources */,
 				3776C5311AABB9D500E676C4 /* ExploreViewController.swift in Sources */,
 				3781C2A11A79E99D00ADF981 /* AppDelegate.swift in Sources */,
+				3776C5371AABBCA100E676C4 /* Conference.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
