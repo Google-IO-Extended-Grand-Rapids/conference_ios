@@ -61,14 +61,15 @@ class ConferencesDao {
             json in
             
             NSLog("in the dao gettingConferenceById")
+            NSLog("%@", json)
             
-            if let value = json["value"] as? NSDictionary {
-                let conferenceId = value["id"] as? Int
-                let name = value["name"] as? String
+
+            let conferenceId = json["id"] as? Int
+            let name = json["name"] as? String
             
-                let conference = Conference(id: conferenceId!, name: name!)
-                conferenceHandler(conference)
-            }
+            let conference = Conference(id: conferenceId!, name: name!)
+            conferenceHandler(conference)
+
         }
     }
     
