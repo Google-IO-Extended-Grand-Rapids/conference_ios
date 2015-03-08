@@ -4,8 +4,10 @@ use_frameworks!
 
 target 'ConferenceApp' do
   pod 'SwiftyJSON', '~> 2.1'
+  pod 'ObjectMapper', '~> 0.8'
 end
 
 target 'ConferenceAppTests' do
   pod 'SwiftyJSON', '~> 2.1'
+  pod 'ObjectMapper', '~> 0.8'
 end
