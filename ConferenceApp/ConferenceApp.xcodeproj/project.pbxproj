@@ -10,6 +10,8 @@
 		3776C5311AABB9D500E676C4 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3776C5301AABB9D500E676C4 /* ExploreViewController.swift */; };
 		3776C5341AABBA8300E676C4 /* EventDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3776C5331AABBA8300E676C4 /* EventDetailsViewController.swift */; };
 		3776C5371AABBCA100E676C4 /* Conference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3776C5361AABBCA100E676C4 /* Conference.swift */; };
+		3776C5391AABFB9900E676C4 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3776C5381AABFB9800E676C4 /* Location.swift */; };
+		3776C53C1AABFE0E00E676C4 /* ConferencesDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3776C53B1AABFE0E00E676C4 /* ConferencesDao.swift */; };
 		3781C2A11A79E99D00ADF981 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3781C2A01A79E99D00ADF981 /* AppDelegate.swift */; };
 		3781C2A81A79E99D00ADF981 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3781C2A61A79E99D00ADF981 /* Main.storyboard */; };
 		3781C2AA1A79E99D00ADF981 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3781C2A91A79E99D00ADF981 /* Images.xcassets */; };
@@ -31,6 +33,8 @@
 		3776C5301AABB9D500E676C4 /* ExploreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
 		3776C5331AABBA8300E676C4 /* EventDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDetailsViewController.swift; sourceTree = "<group>"; };
 		3776C5361AABBCA100E676C4 /* Conference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Conference.swift; sourceTree = "<group>"; };
+		3776C5381AABFB9800E676C4 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		3776C53B1AABFE0E00E676C4 /* ConferencesDao.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConferencesDao.swift; sourceTree = "<group>"; };
 		3781C29B1A79E99D00ADF981 /* ConferenceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConferenceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3781C29F1A79E99D00ADF981 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3781C2A01A79E99D00ADF981 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -60,21 +64,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3776C5321AABB9DB00E676C4 /* Controllers */ = {
+		3776C5321AABB9DB00E676C4 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				3776C5301AABB9D500E676C4 /* ExploreViewController.swift */,
 				3776C5331AABBA8300E676C4 /* EventDetailsViewController.swift */,
 			);
-			name = Controllers;
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 		3776C5351AABBC9300E676C4 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				3776C5361AABBCA100E676C4 /* Conference.swift */,
+				3776C5381AABFB9800E676C4 /* Location.swift */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		3776C53A1AABFD8200E676C4 /* DAOs */ = {
+			isa = PBXGroup;
+			children = (
+				3776C53B1AABFE0E00E676C4 /* ConferencesDao.swift */,
+			);
+			name = DAOs;
 			sourceTree = "<group>";
 		};
 		3781C2921A79E99D00ADF981 = {
@@ -98,8 +111,9 @@
 		3781C29D1A79E99D00ADF981 /* ConferenceApp */ = {
 			isa = PBXGroup;
 			children = (
+				3776C53A1AABFD8200E676C4 /* DAOs */,
 				3776C5351AABBC9300E676C4 /* Models */,
-				3776C5321AABB9DB00E676C4 /* Controllers */,
+				3776C5321AABB9DB00E676C4 /* ViewControllers */,
 				3781C2A01A79E99D00ADF981 /* AppDelegate.swift */,
 				3781C2A61A79E99D00ADF981 /* Main.storyboard */,
 				3781C2A91A79E99D00ADF981 /* Images.xcassets */,
@@ -236,6 +250,8 @@
 			files = (
 				3776C5341AABBA8300E676C4 /* EventDetailsViewController.swift in Sources */,
 				3776C5311AABB9D500E676C4 /* ExploreViewController.swift in Sources */,
+				3776C53C1AABFE0E00E676C4 /* ConferencesDao.swift in Sources */,
+				3776C5391AABFB9900E676C4 /* Location.swift in Sources */,
 				3781C2A11A79E99D00ADF981 /* AppDelegate.swift in Sources */,
 				3776C5371AABBCA100E676C4 /* Conference.swift in Sources */,
 			);

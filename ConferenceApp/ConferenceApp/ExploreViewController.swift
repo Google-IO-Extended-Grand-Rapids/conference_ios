@@ -11,7 +11,7 @@ import UIKit
 class ExploreViewController: UITableViewController {
     
     var objects = NSMutableArray()
-    
+    var conferencesDao: ConferencesDao!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -20,6 +20,10 @@ class ExploreViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
+        conferencesDao = appDelegate.conferencesDao!
+        conferencesDao.getConferenceById(0, receivedConferenceById)
+        
         self.navigationItem.leftBarButtonItem = self.editButtonItem()
         
         let addButton = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: "insertNewObject:")
@@ -28,6 +32,14 @@ class ExploreViewController: UITableViewController {
         insertNewObject(String("Hey"))
         insertNewObject(String("Hey"))
         insertNewObject(String("Hey"))
+    }
+    
+    func receivedConferenceById(conference: Conference) {
+        insertNewObject(conference.name)
+        dispatch_async(dispatch_get_main_queue(), { () -> Void in
+            self.tableView.reloadData()
+        })
+        NSLog("receivedConferenceById")
     }
     
     override func didReceiveMemoryWarning() {

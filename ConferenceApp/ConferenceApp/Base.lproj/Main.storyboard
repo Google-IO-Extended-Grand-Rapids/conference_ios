@@ -61,7 +61,7 @@
                             <constraint firstAttribute="centerX" secondItem="drG-y0-afI" secondAttribute="centerX" id="cgy-lK-YV7"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Settings" image="UITabBarSystemItemMore" selectedImage="UITabBarSystemItemMore" id="Qe6-Nw-Ody"/>
+                    <tabBarItem key="tabBarItem" title="Settings" id="Qe6-Nw-Ody"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DXp-F1-9tA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -189,7 +189,4 @@
             <point key="canvasLocation" x="1343" y="64"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="UITabBarSystemItemMore" width="16" height="16"/>
-    </resources>
 </document>
