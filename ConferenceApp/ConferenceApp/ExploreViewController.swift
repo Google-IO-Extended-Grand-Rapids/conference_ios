@@ -35,7 +35,7 @@ class ExploreViewController: UITableViewController {
     }
     
     func receivedConferenceById(conference: Conference) {
-        insertNewObject(conference.name)
+        insertNewObject(conference.name!)
         dispatch_async(dispatch_get_main_queue(), { () -> Void in
             self.tableView.reloadData()
         })

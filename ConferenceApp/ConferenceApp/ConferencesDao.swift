@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import ObjectMapper
 
 class ConferencesDao {
     func makeRequestToAPI(url: String, onCompletion:(NSDictionary) -> ()) {
@@ -63,13 +64,8 @@ class ConferencesDao {
             NSLog("in the dao gettingConferenceById")
             NSLog("%@", json)
             
-
-            let conferenceId = json["id"] as? Int
-            let name = json["name"] as? String
-            
-            let conference = Conference(id: conferenceId!, name: name!)
-            conferenceHandler(conference)
-
+            let conference = Mapper<Conference>().map(json)
+            conferenceHandler(conference!)
         }
     }
     
