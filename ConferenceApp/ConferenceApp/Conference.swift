@@ -7,21 +7,35 @@
 //
 
 import Foundation
+import ObjectMapper
 
-class Conference : NSObject {
-    let id: Int
-    let name: String
-    /*let shortDesc: String
-    let fullDesc: String
-    let startDate: NSDate
-    let endDate: NSDate
-    let location: Location
-    let createDttm: NSDate
-    let lastUpdateDttm: NSDate*/
+class Conference : Mappable {
     
-    init(id: Int, name: String) {
-        self.id = id
-        self.name = name
+    var id: Int?
+    var name: String?
+    var shortDesc: String?
+    var fullDesc: String?
+    var startDate: NSDate?
+    var endDate: NSDate?
+    var location: Location?
+    var createDttm: NSDate?
+    var lastUpdateDttm: NSDate?
+    
+    required init?(_ map: Map) {
+        mapping(map)
+    }
+    
+    // Mappable
+    func mapping(map: Map) {
+        id              <- map["id"]
+        name            <- map["name"]
+        shortDesc       <- map["shortDesc"]
+        fullDesc        <- map["fullDesc"]
+        startDate       <- (map["startDate"], CustomDateFormatTransform(formatString: "yyyy-MM-dd'T'HH:mm:ss"))
+        endDate         <- (map["endDate"], CustomDateFormatTransform(formatString: "yyyy-MM-dd'T'HH:mm:ss"))
+        location        <- map["locationView"]
+        createDttm      <- (map["createDttm"], CustomDateFormatTransform(formatString: "yyyy-MM-dd'T'HH:mm:ss"))
+        lastUpdateDttm  <- (map["lastUpdateDttm"], CustomDateFormatTransform(formatString: "yyyy-MM-dd'T'HH:mm:ss"))
     }
     
 }
