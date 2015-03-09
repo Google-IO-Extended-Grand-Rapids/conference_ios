@@ -22,24 +22,28 @@ class ExploreViewController: UITableViewController {
         // Do any additional setup after loading the view, typically from a nib.
         let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
         conferencesDao = appDelegate.conferencesDao!
-        conferencesDao.getConferenceById(0, receivedConferenceById)
+        
+        conferencesDao.getAllConferences(receivedConferences)
+        //conferencesDao.getConferenceById(0, receivedConferenceById)
         
         self.navigationItem.leftBarButtonItem = self.editButtonItem()
         
         let addButton = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: "insertNewObject:")
         self.navigationItem.rightBarButtonItem = addButton
-        
-        insertNewObject(String("Hey"))
-        insertNewObject(String("Hey"))
-        insertNewObject(String("Hey"))
     }
     
-    func receivedConferenceById(conference: Conference) {
-        insertNewObject(conference.name!)
+    func receivedConferences(conferences: NSArray) {
+        for conference in conferences {
+            if let conference = conference as? Conference {
+                insertNewObject(conference.name!)
+            }
+        }
+        
         dispatch_async(dispatch_get_main_queue(), { () -> Void in
             self.tableView.reloadData()
         })
-        NSLog("receivedConferenceById")
+        
+        NSLog("receivedConferences")
     }
     
     override func didReceiveMemoryWarning() {
