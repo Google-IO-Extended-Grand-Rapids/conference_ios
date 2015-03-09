@@ -7,13 +7,30 @@
 //
 
 import Foundation
+import ObjectMapper
 
-class Location : NSObject {
-    let id: Int
-    let name: String
+class Location : Mappable {
+    var id: Int?
+    var name: String?
+    var shortDesc: String?
+    var fullDesc: String?
+    var parkingInfo: String?
+    var createDttm: NSDate?
+    var lastUpdateDttm: NSDate?
     
-    init(id: Int, name: String) {
-        self.id = id
-        self.name = name
+    required init?(_ map: Map) {
+        mapping(map)
     }
+    
+    // Mappable
+    func mapping(map: Map) {
+        id              <- map["id"]
+        name            <- map["name"]
+        shortDesc       <- map["shortDesc"]
+        fullDesc        <- map["fullDesc"]
+        parkingInfo     <- map["parkingInfo"]
+        createDttm      <- (map["createDttm"], CustomDateFormatTransform(formatString: "yyyy-MM-dd'T'HH:mm:ss"))
+        lastUpdateDttm  <- (map["lastUpdateDttm"], CustomDateFormatTransform(formatString: "yyyy-MM-dd'T'HH:mm:ss"))
+    }
+
 }

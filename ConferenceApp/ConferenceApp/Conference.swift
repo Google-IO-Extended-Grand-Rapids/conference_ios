@@ -17,7 +17,7 @@ class Conference : Mappable {
     var fullDesc: String?
     var startDate: NSDate?
     var endDate: NSDate?
-    //var location: Location?
+    var location: Location?
     var createDttm: NSDate?
     var lastUpdateDttm: NSDate?
     
@@ -33,6 +33,7 @@ class Conference : Mappable {
         fullDesc        <- map["fullDesc"]
         startDate       <- (map["startDate"], CustomDateFormatTransform(formatString: "yyyy-MM-dd'T'HH:mm:ss"))
         endDate         <- (map["endDate"], CustomDateFormatTransform(formatString: "yyyy-MM-dd'T'HH:mm:ss"))
+        location        <- map["locationView"]
         createDttm      <- (map["createDttm"], CustomDateFormatTransform(formatString: "yyyy-MM-dd'T'HH:mm:ss"))
         lastUpdateDttm  <- (map["lastUpdateDttm"], CustomDateFormatTransform(formatString: "yyyy-MM-dd'T'HH:mm:ss"))
     }
