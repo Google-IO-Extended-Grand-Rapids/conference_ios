@@ -31,10 +31,10 @@ class Conference : Mappable {
         name            <- map["name"]
         shortDesc       <- map["shortDesc"]
         fullDesc        <- map["fullDesc"]
-        startDate       <- (map["startDate"], CustomDateTransform())
-        endDate         <- (map["endDate"], CustomDateTransform())
-        createDttm      <- (map["createDttm"], CustomDateTransform())
-        lastUpdateDttm  <- (map["lastUpdateDttm"], CustomDateTransform())
+        startDate       <- (map["startDate"], CustomDateFormatTransform(formatString: "yyyy-MM-dd'T'HH:mm:ss"))
+        endDate         <- (map["endDate"], CustomDateFormatTransform(formatString: "yyyy-MM-dd'T'HH:mm:ss"))
+        createDttm      <- (map["createDttm"], CustomDateFormatTransform(formatString: "yyyy-MM-dd'T'HH:mm:ss"))
+        lastUpdateDttm  <- (map["lastUpdateDttm"], CustomDateFormatTransform(formatString: "yyyy-MM-dd'T'HH:mm:ss"))
     }
     
 }

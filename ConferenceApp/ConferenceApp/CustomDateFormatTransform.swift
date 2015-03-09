@@ -9,16 +9,22 @@
 import Foundation
 import ObjectMapper
 
-public class CustomDateTransform: TransformType {
+public class CustomDateFormatTransform: TransformType {
     public typealias Object = NSDate
     public typealias JSON = String
+    
+    let formatString: String = ""
 
-	public init() {}
+    public init(formatString: String) {
+        if !formatString.isEmpty {
+            self.formatString = formatString
+        }
+    }
 
 	private lazy var dateFormatter: NSDateFormatter = {
 		let formatter = NSDateFormatter()
 		formatter.locale = NSLocale(localeIdentifier: "en_US_POSIX")
-		formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss"
+		formatter.dateFormat = self.formatString
 		return formatter
 	}()
 
