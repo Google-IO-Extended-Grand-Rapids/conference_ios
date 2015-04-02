@@ -41,4 +41,16 @@ class EventDetailsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    // MARK: - Segues
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "showSchedule" {
+            NSLog("showing schedule")
+//            if let indexPath = self.tableView.indexPathForSelectedRow() {
+//                let object = objects[indexPath.row] as Conference
+//                (segue.destinationViewController as EventDetailsViewController).detailItem = object
+//            }
+        }
+    }
+    
 }
