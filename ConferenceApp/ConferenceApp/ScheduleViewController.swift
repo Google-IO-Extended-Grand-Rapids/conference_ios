@@ -71,6 +71,18 @@ class ScheduleViewController: UITableViewController {
         self.tableView.insertRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
     }
     
+    // MARK: - Segues
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "showSessionDetail" {
+            if let indexPath = self.tableView.indexPathForSelectedRow() {
+                let object = sessionObjects[indexPath.row] as Session
+                NSLog("showing session detail")
+                (segue.destinationViewController as SessionDetailViewController).detailItem = object
+            }
+        }
+    }
+    
     // MARK: - Table View
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {

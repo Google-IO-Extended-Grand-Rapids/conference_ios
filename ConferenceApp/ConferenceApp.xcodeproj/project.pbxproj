@@ -19,6 +19,7 @@
 		3781C2B91A79E99E00ADF981 /* ConferenceAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3781C2B81A79E99E00ADF981 /* ConferenceAppTests.swift */; };
 		37A103581ACD8EC300869E04 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A103571ACD8EC300869E04 /* ScheduleViewController.swift */; };
 		37A1035A1ACD92CC00869E04 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A103591ACD92CC00869E04 /* Session.swift */; };
+		37A1035C1ACDB08E00869E04 /* SessionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A1035B1ACDB08E00869E04 /* SessionDetailViewController.swift */; };
 		A1284D252AADAF10B53C6774 /* Pods_ConferenceApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6421B88FC1F98C23B7A42B9 /* Pods_ConferenceApp.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		C6E701BF9D953504A74E1028 /* Pods_ConferenceAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 568F4F33C01E8A3FD5478D90 /* Pods_ConferenceAppTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
@@ -52,6 +53,7 @@
 		3781C2B81A79E99E00ADF981 /* ConferenceAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConferenceAppTests.swift; sourceTree = "<group>"; };
 		37A103571ACD8EC300869E04 /* ScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
 		37A103591ACD92CC00869E04 /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		37A1035B1ACDB08E00869E04 /* SessionDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionDetailViewController.swift; sourceTree = "<group>"; };
 		568F4F33C01E8A3FD5478D90 /* Pods_ConferenceAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ConferenceAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C362A009DCA0705F7F7DAFD /* Pods-ConferenceAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConferenceAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ConferenceAppTests/Pods-ConferenceAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		BDE3B891ECEB7BABEEDE2A36 /* Pods-ConferenceApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConferenceApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ConferenceApp/Pods-ConferenceApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 				3776C5301AABB9D500E676C4 /* ExploreViewController.swift */,
 				3776C5331AABBA8300E676C4 /* EventDetailsViewController.swift */,
 				37A103571ACD8EC300869E04 /* ScheduleViewController.swift */,
+				37A1035B1ACDB08E00869E04 /* SessionDetailViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -389,6 +392,7 @@
 				3776C5311AABB9D500E676C4 /* ExploreViewController.swift in Sources */,
 				3776C53C1AABFE0E00E676C4 /* ConferencesDao.swift in Sources */,
 				3776C5391AABFB9900E676C4 /* Location.swift in Sources */,
+				37A1035C1ACDB08E00869E04 /* SessionDetailViewController.swift in Sources */,
 				37A1035A1ACD92CC00869E04 /* Session.swift in Sources */,
 				3781C2A11A79E99D00ADF981 /* AppDelegate.swift in Sources */,
 				37A103581ACD8EC300869E04 /* ScheduleViewController.swift in Sources */,

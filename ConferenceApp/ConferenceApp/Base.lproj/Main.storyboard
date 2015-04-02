@@ -251,6 +251,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="j8p-za-cFm" kind="show" identifier="showSessionDetail" id="JDM-gn-jWp"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -262,6 +265,32 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vOB-dO-xnt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2147" y="70"/>
+        </scene>
+        <!--Session Detail-->
+        <scene sceneID="aAu-GW-1Np">
+            <objects>
+                <tableViewController id="j8p-za-cFm" userLabel="Session Detail" customClass="SessionDetailViewController" customModule="ConferenceApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="OZu-S6-MCr">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SessionDetailCell" id="7Se-tT-RnA">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7Se-tT-RnA" id="Vz1-7S-gf3">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="j8p-za-cFm" id="Q1v-jZ-fdA"/>
+                            <outlet property="delegate" destination="j8p-za-cFm" id="Ro8-kX-Doa"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qU8-eL-dK3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2947" y="70"/>
         </scene>
     </scenes>
 </document>

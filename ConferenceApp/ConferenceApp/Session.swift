@@ -23,6 +23,7 @@ class Session : Mappable {
     var lastUpdateDttm: NSDate?
     
     // TODO :- presenterIds or list of Presenter objects please!!
+    // TODO :- roomId replaced with Room object please!!
     
     required init?(_ map: Map) {
         mapping(map)
