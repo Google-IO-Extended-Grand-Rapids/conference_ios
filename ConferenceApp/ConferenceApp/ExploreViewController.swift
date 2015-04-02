@@ -35,7 +35,7 @@ class ExploreViewController: UITableViewController {
     func receivedConferences(conferences: NSArray) {
         for conference in conferences {
             if let conference = conference as? Conference {
-                insertNewObject(conference.name!)
+                insertNewObject(conference)
             }
         }
         
@@ -52,7 +52,7 @@ class ExploreViewController: UITableViewController {
     }
     
     func insertNewObject(sender: AnyObject) {
-        let y = sender as? String
+        let y = sender as? Conference
         
         if (y != nil) {
             objects.insertObject(sender, atIndex: 0)
@@ -69,7 +69,7 @@ class ExploreViewController: UITableViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "showDetail" {
             if let indexPath = self.tableView.indexPathForSelectedRow() {
-                let object = objects[indexPath.row] as String
+                let object = objects[indexPath.row] as Conference
                 (segue.destinationViewController as EventDetailsViewController).detailItem = object
             }
         }
@@ -88,8 +88,8 @@ class ExploreViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as UITableViewCell
         
-        let object = objects[indexPath.row] as String
-        cell.textLabel!.text = object
+        let object = objects[indexPath.row] as Conference
+        cell.textLabel!.text = object.name
         return cell
     }
     

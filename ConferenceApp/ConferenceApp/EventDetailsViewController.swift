@@ -13,8 +13,7 @@ class EventDetailsViewController: UIViewController {
     @IBOutlet weak var eventNameLabel: UILabel!
     @IBOutlet weak var eventDateLabel: UILabel!
     
-    
-    var detailItem: String? {
+    var detailItem: Conference? {
         didSet {
             // Update the view.
             self.configureView()
@@ -23,9 +22,9 @@ class EventDetailsViewController: UIViewController {
     
     func configureView() {
         // Update the user interface for the detail item.
-        if let detail: String = self.detailItem {
+        if let detail: Conference = self.detailItem {
             if let label = self.eventNameLabel {
-                self.eventNameLabel.text = detail
+                self.eventNameLabel.text = detail.name
                 self.eventDateLabel.text = "put the date here"
             }
         }
@@ -41,6 +40,5 @@ class EventDetailsViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
     
 }
