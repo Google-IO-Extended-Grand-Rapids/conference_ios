@@ -13,8 +13,21 @@ class ScheduleViewController: UITableViewController {
     var sessionObjects = NSMutableArray()
     var conferencesDao: ConferencesDao!
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
+    var detailItem: Conference? {
+        didSet {
+            // Update the view.
+            self.configureView()
+        }
+    }
+
+    func configureView() {
+        // Update the user interface for the detail item.
+//        if let detail: Conference = self.detailItem {
+//            if let label = self.eventNameLabel {
+//                self.eventNameLabel.text = detail.name
+//                self.eventDateLabel.text = "put the date here"
+//            }
+//        }
     }
     
     override func viewDidLoad() {
@@ -23,7 +36,9 @@ class ScheduleViewController: UITableViewController {
         let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
         conferencesDao = appDelegate.conferencesDao!
         
-        conferencesDao.getSessionsByConferenceId(7, receivedSessions)
+        if let detail: Conference = self.detailItem {
+            conferencesDao.getSessionsByConferenceId(detail.id!, receivedSessions)
+        }
     }
     
     func receivedSessions(sessions: NSArray) {
@@ -37,7 +52,7 @@ class ScheduleViewController: UITableViewController {
             self.tableView.reloadData()
         })
         
-        NSLog("receivedConferences")
+        NSLog("receivedSessions")
     }
     
     override func didReceiveMemoryWarning() {

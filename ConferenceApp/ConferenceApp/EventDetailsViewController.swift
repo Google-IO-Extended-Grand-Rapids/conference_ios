@@ -46,10 +46,8 @@ class EventDetailsViewController: UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "showSchedule" {
             NSLog("showing schedule")
-//            if let indexPath = self.tableView.indexPathForSelectedRow() {
-//                let object = objects[indexPath.row] as Conference
-//                (segue.destinationViewController as EventDetailsViewController).detailItem = object
-//            }
+                (segue.destinationViewController as ScheduleViewController).detailItem = detailItem
+            
         }
     }
     
