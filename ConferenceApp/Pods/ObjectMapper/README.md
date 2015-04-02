@@ -1,6 +1,8 @@
 ObjectMapper
 ============
 
+[![Build Status](https://travis-ci.org/Hearst-DD/ObjectMapper.svg?branch=master)](https://travis-ci.org/Hearst-DD/ObjectMapper)
+
 ObjectMapper is a framework written in Swift that makes it easy for you to convert your Model objects (Classes and Structs) to and from JSON.
 ##Features:
 - Mapping JSON to objects
@@ -122,17 +124,71 @@ public protocol TransformType {
     func transformToJSON(value: Object?) -> JSON?
 }
 ```
+
+#### TransformOf
+In a lot of situations you can use the built in transform class ```TransformOf``` to quickly perform a desired transformation. ```TransformOf``` is initialized with two types and two closures. The types define what the transform is converting to and from and the closures perform the actual transformation. 
+
+For example, if you want to transform a JSON String value to an Int you could use ```TransformOf``` as follows:
+```
+let transform = TransformOf<Int, String>(fromJSON: { (value: String?) -> Int? in 
+    // transform value from String? to Int?
+    return value?.toInt()
+}, toJSON: { (value: Int?) -> String? in
+    // transform value from Int? to String?
+    if let value = value {
+        return String(value)
+    }
+    return nil
+})
+
+id <- (map["id"], transform)
+```
+Here is a more condensed version of the above:
+```
+id <- (map["id"], TransformOf<Int, String>(fromJSON: { $0?.toInt() }, toJSON: { $0.map { String($0) } }))
+```
+
+##Subclasses
+Classes that implement the Mappable protocol can easily be subclassed. When subclassing Mappable classes, follow the structure below:
+```
+class Base: Mappable {
+	var base: String?
+	
+	required init?(_ map: Map) {
+		mapping(map)
+	}
+
+	func mapping(map: Map) {
+		base <- map["base"]
+	}
+}
+
+class Subclass: Base {
+	var sub: String?
+
+	required init?(_ map: Map) {
+		super.init(map)
+	}
+
+	override func mapping(map: Map) {
+		super.mapping(map)
+		
+		sub <- map["sub"]
+	}
+}
+```
+
 <!-- ##To Do -->
 
 ##Installation
 ObjectMapper can be added to your project using [Cocoapods 0.36 (beta)](http://blog.cocoapods.org/Pod-Authors-Guide-to-CocoaPods-Frameworks/) by adding the following line to your Podfile:
 ```
-pod 'ObjectMapper', '~> 0.7'
+pod 'ObjectMapper', '~> 0.8'
 ```
 
 If your using [Carthage](https://github.com/Carthage/Carthage) you can add a dependency on ObjectMapper by adding it to your Cartfile:
 ```
-github "Hearst-DD/ObjectMapper" ~> 0.7
+github "Hearst-DD/ObjectMapper" ~> 0.8
 ```
 
 Otherwise, ObjectMapper can be added as a submodule:

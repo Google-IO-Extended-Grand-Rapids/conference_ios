@@ -9,7 +9,7 @@
 // ObjectMapper
 #define COCOAPODS_POD_AVAILABLE_ObjectMapper
 #define COCOAPODS_VERSION_MAJOR_ObjectMapper 0
-#define COCOAPODS_VERSION_MINOR_ObjectMapper 8
+#define COCOAPODS_VERSION_MINOR_ObjectMapper 9
 #define COCOAPODS_VERSION_PATCH_ObjectMapper 0
 
 // SwiftyJSON
