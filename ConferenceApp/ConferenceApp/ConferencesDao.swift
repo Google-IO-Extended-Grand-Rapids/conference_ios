@@ -10,6 +10,9 @@ import Foundation
 import ObjectMapper
 
 class ConferencesDao {
+    
+    let baseURL = "http://104.236.204.59:8080"
+    
     func makeRequestToAPI(url: String, onCompletion:(NSArray) -> ()) {
         let realUrl = NSURL(string: url)
         let request = NSURLRequest(URL: realUrl!)
@@ -28,7 +31,7 @@ class ConferencesDao {
     }
     
     func getAllConferences(conferenceHandler: (NSArray) -> ()) {
-        makeRequestToAPI("http://104.236.204.59:8080/api/conference") {
+        makeRequestToAPI(baseURL + "/api/conference") {
             json in
             
             var arrayOfConferenceObjects: [Conference] = []
@@ -45,7 +48,7 @@ class ConferencesDao {
     }
     
     func getConferenceById(conferenceId: Int, conferenceHandler: (Conference) -> ()) {
-        makeRequestToAPI("http://104.236.204.59:8080/api/conference/\(conferenceId)") {
+        makeRequestToAPI(baseURL + "api/conference/\(conferenceId)") {
             json in
             
             let conference = Mapper<Conference>().map(json)

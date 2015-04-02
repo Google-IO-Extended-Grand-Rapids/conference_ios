@@ -10,7 +10,8 @@ import UIKit
 
 class EventDetailsViewController: UIViewController {
     
-    @IBOutlet weak var detailDescriptionLabel: UILabel!
+    @IBOutlet weak var eventNameLabel: UILabel!
+    @IBOutlet weak var eventDateLabel: UILabel!
     
     
     var detailItem: String? {
@@ -23,8 +24,9 @@ class EventDetailsViewController: UIViewController {
     func configureView() {
         // Update the user interface for the detail item.
         if let detail: String = self.detailItem {
-            if let label = self.detailDescriptionLabel {
-                label.text = detail
+            if let label = self.eventNameLabel {
+                self.eventNameLabel.text = detail
+                self.eventDateLabel.text = "put the date here"
             }
         }
     }
