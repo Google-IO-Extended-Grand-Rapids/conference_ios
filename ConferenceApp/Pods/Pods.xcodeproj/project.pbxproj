@@ -7,490 +7,439 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00BC06F7BC93060DC0A38F59 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B8860F50C9EA6B2D8137B2 /* SwiftyJSON.swift */; };
-		06D4C533B008DB95E963008B /* ToJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2523EFA5115D604B8E5057 /* ToJSON.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		0CB5A267DE36A1BB4DD86406 /* URLTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9151C963A06A5A25CFE30E0 /* URLTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		0FCEE2630FE7BCB6B6907E47 /* Pods-ConferenceAppTests-ObjectMapper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 766832099D61D309D8DA14F0 /* Pods-ConferenceAppTests-ObjectMapper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		10AA4C172FF6629724352858 /* DateTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E042EFFE0D1E805BCE0EFF4 /* DateTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		1B05D4713E224B71D83BDE54 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4918C5C170A3C19E235A8BAA /* Operators.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		1C3342A11EE35B487A5C6685 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80CA9848BF0A9DE5C7B89FAB /* Foundation.framework */; };
-		1DF93F72F98544A37983E422 /* ToJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2523EFA5115D604B8E5057 /* ToJSON.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		23721D716BF03B06CEAADF74 /* ISO8601DateTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25C02B9487C25B922F7328E /* ISO8601DateTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		23FDF81DBD9C54F83A7C5CED /* DateFormaterTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DA295F952F3F1F5EB53C3B /* DateFormaterTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		29D6F6FE098D92F39B11E86E /* TransformType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4141CA6FB81A748862B838 /* TransformType.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		29E47AAC1DDAF3B555F9B094 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B8860F50C9EA6B2D8137B2 /* SwiftyJSON.swift */; };
-		2B0141FE8C4B67EC731068FD /* Pods-ConferenceApp-SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C571C1BC03199B5F657089AD /* Pods-ConferenceApp-SwiftyJSON-dummy.m */; };
-		2D73632ADED22A7BF957AF4D /* TransformOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79332051978A72F3F123124C /* TransformOf.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		305AA47D2B4CF9D41FBB7CA2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80CA9848BF0A9DE5C7B89FAB /* Foundation.framework */; };
-		30CD6BFF9233CEDDD42E6F48 /* TransformOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79332051978A72F3F123124C /* TransformOf.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		34330EF5881E5C961411618B /* Pods-ConferenceApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 726D83D5E915F91086D767B7 /* Pods-ConferenceApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		36436F7C2EED25F1908493F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80CA9848BF0A9DE5C7B89FAB /* Foundation.framework */; };
-		38F875649AC844C482EBCF2C /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC02793A5438E96C40E8959E /* Mapper.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3C41F9FAE29289B7401DD013 /* Pods-ConferenceAppTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B254987F8508697F91327AA3 /* Pods-ConferenceAppTests-dummy.m */; };
-		40080CEC372EEE11767527BE /* EnumTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AAA861C23FAA06E45A7480 /* EnumTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		4227E9A4EAD64BC9D07B4FE2 /* Pods-ConferenceAppTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BAA32DC607AC7201FB6C08BE /* Pods-ConferenceAppTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		493DAF87CF6B878AD707B586 /* FromJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD2FFD5F89663D618096B1B /* FromJSON.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		4964577A9985744704249779 /* Pods-ConferenceApp-SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 66CAC3210E73FAF43BD13371 /* Pods-ConferenceApp-SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		535C3709BDCC63D8B4D0B816 /* CustomDateFormatTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF65235E272CA6C0AB4F356F /* CustomDateFormatTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		6A4E971CAA5D551EFE94510A /* Pods-ConferenceAppTests-SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 92C0A1B03C8363F6A972030A /* Pods-ConferenceAppTests-SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7240B9411E085426D4595F50 /* Pods-ConferenceAppTests-ObjectMapper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3092DED213F07506A4965A6A /* Pods-ConferenceAppTests-ObjectMapper-dummy.m */; };
-		7335AADABED930C30CB02078 /* TransformType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4141CA6FB81A748862B838 /* TransformType.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		79837F867F8ACC21B81A8E89 /* Pods-ConferenceApp-ObjectMapper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 19F4F4D2605E6DF9A3F7EB3B /* Pods-ConferenceApp-ObjectMapper-dummy.m */; };
-		809AEFA39714F685F085023D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80CA9848BF0A9DE5C7B89FAB /* Foundation.framework */; };
-		863C960E2D8E9B12658EEF4C /* FromJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD2FFD5F89663D618096B1B /* FromJSON.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		89805E69848CD88E927172EE /* DateTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E042EFFE0D1E805BCE0EFF4 /* DateTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		97019F3C76B3067A74B89595 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80CA9848BF0A9DE5C7B89FAB /* Foundation.framework */; };
-		9859C0CB9EF699D76E9D2613 /* Pods-ConferenceApp-ObjectMapper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3783B078C965C5172F33B3A8 /* Pods-ConferenceApp-ObjectMapper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9BA7A1ACBC603FE9143F7948 /* ISO8601DateTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25C02B9487C25B922F7328E /* ISO8601DateTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A8D905B786FB343B3661ABCD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80CA9848BF0A9DE5C7B89FAB /* Foundation.framework */; };
-		A96312684C4FEBD36C3C1758 /* DateFormaterTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DA295F952F3F1F5EB53C3B /* DateFormaterTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		B5EE2486FFFF78EEE50FFF13 /* Pods-ConferenceAppTests-SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FB2C4285F8BC6B1223ECADCA /* Pods-ConferenceAppTests-SwiftyJSON-dummy.m */; };
-		BFB013BBBE4C8ABEC6A431CB /* Pods-ConferenceApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7050A0917FDA7C57F08F4E3F /* Pods-ConferenceApp-dummy.m */; };
-		C5BAB408641F4CC24AAA328F /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC02793A5438E96C40E8959E /* Mapper.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		CB6C9FADA0C83CF5F967F0D8 /* CustomDateFormatTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF65235E272CA6C0AB4F356F /* CustomDateFormatTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		D73B9833BB5FC468A3548062 /* EnumTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AAA861C23FAA06E45A7480 /* EnumTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		DE9C2AFE3A8229FCECDAA7E1 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4918C5C170A3C19E235A8BAA /* Operators.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		F7AD95E394278CF1860BC17A /* URLTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9151C963A06A5A25CFE30E0 /* URLTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		02AB6A381E819A9A64FAAB3A /* ISO8601DateTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF489416A486B6394EB96B5B /* ISO8601DateTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		042B376ABA9E90F02D692B3F /* CustomDateFormatTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55237899C81642D48038E951 /* CustomDateFormatTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0EB6E60C086A3BF080CFCB04 /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B686CD804CBE1A8234CB9C51 /* Mapper.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0F27397E8A08861E32F04FF6 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8211041C80BB5801939B95BE /* SwiftyJSON.swift */; };
+		1361B9D87965FDDB7E156728 /* Pods-ConferenceAppTests-ObjectMapper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A62214D6AE8D74E6A5E33EF7 /* Pods-ConferenceAppTests-ObjectMapper-dummy.m */; };
+		1526DE6791D27348F82C46EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED71A3C3C2C6E3F1AF33B946 /* Foundation.framework */; };
+		1983184AA03C0C615D41E663 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED71A3C3C2C6E3F1AF33B946 /* Foundation.framework */; };
+		1B956667D5C5EA5C8E87C359 /* Pods-ConferenceAppTests-ObjectMapper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A988B08064FEAE9645258842 /* Pods-ConferenceAppTests-ObjectMapper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1BCCF2819DB0B98659D06DDB /* EnumTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7299CEADFF9A42DD5F2C70 /* EnumTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		1D9013155488381730F2A8EF /* TransformOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = C905954C783795B11C619244 /* TransformOf.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		202B23AA338E258F1C6C8178 /* Pods-ConferenceApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 61A583274CDF9CF0CD7C8663 /* Pods-ConferenceApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2292C890E88E8D97E8C7701B /* Pods-ConferenceApp-SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 990060F7177920EDCBA4A6D1 /* Pods-ConferenceApp-SwiftyJSON-dummy.m */; };
+		299343DA4E0C1BDBDA825AA7 /* FromJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C98D075C18B5B83758797E /* FromJSON.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		30C709416D3398EB9BF14B59 /* Pods-ConferenceAppTests-SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 29E157CBB96FE3B2EAC3CA6D /* Pods-ConferenceAppTests-SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CCBF15F4F3B64FD472C0316 /* TransformOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = C905954C783795B11C619244 /* TransformOf.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3EAC3633712055C2ADAD7C3B /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF91C0EDAF0C25C65F5C09F5 /* Operators.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		49B9949885EF57101DEE1ADC /* EnumTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7299CEADFF9A42DD5F2C70 /* EnumTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4FD4F6BF9E36D5C3CE555BF1 /* DateTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E518B844C36CE547A8C14C0 /* DateTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5F634745AACCDBC541C6346F /* DateFormaterTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F1FA35EE89618414259DB9 /* DateFormaterTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5F89A3E17679C25EFD8A95BE /* ToJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778B499F49E92C62B7E9615F /* ToJSON.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		69BD0D9162D36C2C9BCB8452 /* FromJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C98D075C18B5B83758797E /* FromJSON.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		740FC775411B44714E611A70 /* Pods-ConferenceApp-SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D142279782ECC10D7682861 /* Pods-ConferenceApp-SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		74765A5664E5412CFB44D3B5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED71A3C3C2C6E3F1AF33B946 /* Foundation.framework */; };
+		7C1320E5BCA3CD8AF44C6F50 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED71A3C3C2C6E3F1AF33B946 /* Foundation.framework */; };
+		82EDC320E3869F3BA56A42B2 /* CustomDateFormatTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55237899C81642D48038E951 /* CustomDateFormatTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		854E52DAF9A0C76DBB860F8B /* URLTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5153802AB248225D9E426F8C /* URLTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		89223291CE71924609CA9BD6 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8211041C80BB5801939B95BE /* SwiftyJSON.swift */; };
+		8E345E53019C8884C416BA89 /* Pods-ConferenceApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0763A2A38BADA0B208362305 /* Pods-ConferenceApp-dummy.m */; };
+		8F80260D5D6A20192E7C145A /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B686CD804CBE1A8234CB9C51 /* Mapper.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8FAD098FFD391EC3C4AA1969 /* ISO8601DateTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF489416A486B6394EB96B5B /* ISO8601DateTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		928FF0796A3BEA77112EFAE9 /* DateFormaterTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F1FA35EE89618414259DB9 /* DateFormaterTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		93DE04ACF97DAF889688B4A5 /* Pods-ConferenceApp-ObjectMapper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5869DCC8A9FE988CF9ADDE83 /* Pods-ConferenceApp-ObjectMapper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9551E10F745455951735678E /* TransformType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8CA5B40CE72ECD8AC06838 /* TransformType.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		99DF81FE6ADC072E02E3B649 /* Pods-ConferenceApp-ObjectMapper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D7876859305F5C98BBF9BED4 /* Pods-ConferenceApp-ObjectMapper-dummy.m */; };
+		9A4D4ACEA6870969E107442D /* Pods-ConferenceAppTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 322BA4322ED4C82858308A33 /* Pods-ConferenceAppTests-dummy.m */; };
+		9D063B335359BCC522B0F50F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED71A3C3C2C6E3F1AF33B946 /* Foundation.framework */; };
+		A2183A1FB0B1666DC45C5533 /* Pods-ConferenceAppTests-SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA10616E4FA686F922A358E /* Pods-ConferenceAppTests-SwiftyJSON-dummy.m */; };
+		ABAEB85BFD07EEB805697D4E /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF91C0EDAF0C25C65F5C09F5 /* Operators.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C078FBF89566177783D0CB56 /* TransformType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8CA5B40CE72ECD8AC06838 /* TransformType.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CB86F4DB0D9FB6C079AF64EF /* ToJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778B499F49E92C62B7E9615F /* ToJSON.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D48278BD014387E2713E8EA9 /* URLTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5153802AB248225D9E426F8C /* URLTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E232508A7F2EB144FEAD2DB6 /* DateTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E518B844C36CE547A8C14C0 /* DateTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F4B7151B59F315FA76CC150F /* Pods-ConferenceAppTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D8E79E2D3A82D06DFDFF681 /* Pods-ConferenceAppTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB0A9D5B6EA7E99D55A215CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED71A3C3C2C6E3F1AF33B946 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		32C23677B46052244096DCF3 /* PBXContainerItemProxy */ = {
+		40D53E7FACC08B5A4190EF14 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F34D9128F3B0AA128713272C /* Project object */;
+			containerPortal = 7E459F1AB63BD1B09359BF5F /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = C0B712DE014B3BCB8DE79422;
+			remoteGlobalIDString = 58797375DAF94A76EE0A3746;
 			remoteInfo = "Pods-ConferenceAppTests-ObjectMapper";
 		};
-		351959EC84D3A556B27251F0 /* PBXContainerItemProxy */ = {
+		89927130B178DD8447AC89E9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F34D9128F3B0AA128713272C /* Project object */;
+			containerPortal = 7E459F1AB63BD1B09359BF5F /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 5B78811399FC476D09C40843;
-			remoteInfo = "Pods-ConferenceApp-SwiftyJSON";
-		};
-		4F7106E2A8080CAE02CBDC9C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F34D9128F3B0AA128713272C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9BD48EF1E85DA48523546DFC;
+			remoteGlobalIDString = 8420678AC9787C1E4B4AD3CA;
 			remoteInfo = "Pods-ConferenceAppTests-SwiftyJSON";
 		};
-		61FE770EB7A3C91BE929A3AE /* PBXContainerItemProxy */ = {
+		90D1F4BD3BC6AE7D06F19605 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F34D9128F3B0AA128713272C /* Project object */;
+			containerPortal = 7E459F1AB63BD1B09359BF5F /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = C9C770B249B36780A95EBF5A;
+			remoteGlobalIDString = 2E9854AB79FC5AF1E5CBF462;
 			remoteInfo = "Pods-ConferenceApp-ObjectMapper";
+		};
+		C3290BEB8EFE08B7C769412F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E459F1AB63BD1B09359BF5F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B1F36857C6F17D0386026589;
+			remoteInfo = "Pods-ConferenceApp-SwiftyJSON";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		06652403B933DE507842AFE9 /* Pods-ConferenceAppTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ConferenceAppTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		08CA2A7DC2B091A71F0C81F2 /* Pods-ConferenceApp-SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ConferenceApp-SwiftyJSON.modulemap"; sourceTree = "<group>"; };
-		0970D16D3B2D54E99ECCE6B6 /* Pods-ConferenceApp-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ConferenceApp-environment.h"; sourceTree = "<group>"; };
-		10C45DB3D9D11826FA8718D8 /* Pods-ConferenceAppTests-SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConferenceAppTests-SwiftyJSON.xcconfig"; path = "../Pods-ConferenceAppTests-SwiftyJSON/Pods-ConferenceAppTests-SwiftyJSON.xcconfig"; sourceTree = "<group>"; };
-		13650D7A64B7D5360F9F6FD7 /* Pods-ConferenceAppTests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ConferenceAppTests-environment.h"; sourceTree = "<group>"; };
-		19F4F4D2605E6DF9A3F7EB3B /* Pods-ConferenceApp-ObjectMapper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ConferenceApp-ObjectMapper-dummy.m"; sourceTree = "<group>"; };
-		1EFBAE0C29C665F05CA60F07 /* Pods-ConferenceAppTests-ObjectMapper-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConferenceAppTests-ObjectMapper-Private.xcconfig"; path = "../Pods-ConferenceAppTests-ObjectMapper/Pods-ConferenceAppTests-ObjectMapper-Private.xcconfig"; sourceTree = "<group>"; };
-		256EF21A4750BF3CBA2C838A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2A45484C8767ABA2860A6323 /* Pods-ConferenceApp-ObjectMapper.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ConferenceApp-ObjectMapper.xcconfig"; sourceTree = "<group>"; };
-		2BC751B58218C7B8EA3F9676 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D94CB20223B5A777049FF11 /* Pods-ConferenceApp-ObjectMapper-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ConferenceApp-ObjectMapper-Private.xcconfig"; sourceTree = "<group>"; };
-		2E042EFFE0D1E805BCE0EFF4 /* DateTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateTransform.swift; path = ObjectMapper/Transforms/DateTransform.swift; sourceTree = "<group>"; };
-		2E2F0452126A8B4A313243B5 /* Pods-ConferenceAppTests-SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "Pods-ConferenceAppTests-SwiftyJSON.modulemap"; path = "../Pods-ConferenceAppTests-SwiftyJSON/Pods-ConferenceAppTests-SwiftyJSON.modulemap"; sourceTree = "<group>"; };
-		3092DED213F07506A4965A6A /* Pods-ConferenceAppTests-ObjectMapper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-ConferenceAppTests-ObjectMapper-dummy.m"; path = "../Pods-ConferenceAppTests-ObjectMapper/Pods-ConferenceAppTests-ObjectMapper-dummy.m"; sourceTree = "<group>"; };
-		3507992FE41FC54F82670387 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		35A2B74C8B6C00FFA50DE30E /* Pods-ConferenceAppTests-ObjectMapper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-ConferenceAppTests-ObjectMapper-prefix.pch"; path = "../Pods-ConferenceAppTests-ObjectMapper/Pods-ConferenceAppTests-ObjectMapper-prefix.pch"; sourceTree = "<group>"; };
-		3664BF11B3B61A21EBCD5BC2 /* ObjectMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ObjectMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		36B8860F50C9EA6B2D8137B2 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
-		3783B078C965C5172F33B3A8 /* Pods-ConferenceApp-ObjectMapper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ConferenceApp-ObjectMapper-umbrella.h"; sourceTree = "<group>"; };
-		39B88AE388BAFCB1067F6575 /* Pods-ConferenceApp-ObjectMapper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ConferenceApp-ObjectMapper.modulemap"; sourceTree = "<group>"; };
-		3A5B62B3164BE40E0910A980 /* Pods_ConferenceApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ConferenceApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3ABF49F91CFD32473C58809B /* Pods-ConferenceAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ConferenceAppTests.debug.xcconfig"; sourceTree = "<group>"; };
-		3D12DDAD8042E3BCDDDD9368 /* Pods-ConferenceApp-ObjectMapper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ConferenceApp-ObjectMapper-prefix.pch"; sourceTree = "<group>"; };
-		414018C9B238BB97D4CF72DE /* Pods-ConferenceAppTests-SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-ConferenceAppTests-SwiftyJSON-prefix.pch"; path = "../Pods-ConferenceAppTests-SwiftyJSON/Pods-ConferenceAppTests-SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
-		42D8B15041878B3B2C0BF0B1 /* Pods-ConferenceApp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ConferenceApp-resources.sh"; sourceTree = "<group>"; };
-		4918C5C170A3C19E235A8BAA /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = ObjectMapper/Core/Operators.swift; sourceTree = "<group>"; };
-		4D6126FE00FAFA81C756596A /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5B5DBB076B291FBB2BD36164 /* Pods-ConferenceAppTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ConferenceAppTests-frameworks.sh"; sourceTree = "<group>"; };
-		5CD2FFD5F89663D618096B1B /* FromJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FromJSON.swift; path = ObjectMapper/Core/FromJSON.swift; sourceTree = "<group>"; };
-		5FAB165704542ACEF75C21F7 /* Pods-ConferenceApp-SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ConferenceApp-SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
-		66CAC3210E73FAF43BD13371 /* Pods-ConferenceApp-SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ConferenceApp-SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
-		679E8580E26DD7CF267071AC /* Pods-ConferenceApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ConferenceApp.release.xcconfig"; sourceTree = "<group>"; };
-		6BA72B4419A21054D27513BA /* Pods-ConferenceAppTests-SwiftyJSON-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConferenceAppTests-SwiftyJSON-Private.xcconfig"; path = "../Pods-ConferenceAppTests-SwiftyJSON/Pods-ConferenceAppTests-SwiftyJSON-Private.xcconfig"; sourceTree = "<group>"; };
-		6D61B4A3C00D41AFECBAE281 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7050A0917FDA7C57F08F4E3F /* Pods-ConferenceApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ConferenceApp-dummy.m"; sourceTree = "<group>"; };
-		726D83D5E915F91086D767B7 /* Pods-ConferenceApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ConferenceApp-umbrella.h"; sourceTree = "<group>"; };
-		72D8C09883135A4B8C79C01F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Pods-ConferenceAppTests-SwiftyJSON/Info.plist"; sourceTree = "<group>"; };
-		766832099D61D309D8DA14F0 /* Pods-ConferenceAppTests-ObjectMapper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-ConferenceAppTests-ObjectMapper-umbrella.h"; path = "../Pods-ConferenceAppTests-ObjectMapper/Pods-ConferenceAppTests-ObjectMapper-umbrella.h"; sourceTree = "<group>"; };
-		76AAA861C23FAA06E45A7480 /* EnumTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EnumTransform.swift; path = ObjectMapper/Transforms/EnumTransform.swift; sourceTree = "<group>"; };
-		79332051978A72F3F123124C /* TransformOf.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransformOf.swift; path = ObjectMapper/Transforms/TransformOf.swift; sourceTree = "<group>"; };
-		80CA9848BF0A9DE5C7B89FAB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		86969FD48AC96DC30AEDEBBF /* Pods-ConferenceAppTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ConferenceAppTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		8F4141CA6FB81A748862B838 /* TransformType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransformType.swift; path = ObjectMapper/Transforms/TransformType.swift; sourceTree = "<group>"; };
-		92C0A1B03C8363F6A972030A /* Pods-ConferenceAppTests-SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-ConferenceAppTests-SwiftyJSON-umbrella.h"; path = "../Pods-ConferenceAppTests-SwiftyJSON/Pods-ConferenceAppTests-SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
-		95DA295F952F3F1F5EB53C3B /* DateFormaterTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateFormaterTransform.swift; path = ObjectMapper/Transforms/DateFormaterTransform.swift; sourceTree = "<group>"; };
-		9B3086BBE0AB4E1C75725838 /* Pods_ConferenceAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ConferenceAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A53D2FCE9A92E7C3D03D097E /* Pods-ConferenceAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ConferenceAppTests.release.xcconfig"; sourceTree = "<group>"; };
-		AC02793A5438E96C40E8959E /* Mapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Mapper.swift; path = ObjectMapper/Core/Mapper.swift; sourceTree = "<group>"; };
-		ACC0115419FC0CEAB4801276 /* Pods-ConferenceApp-SwiftyJSON-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ConferenceApp-SwiftyJSON-Private.xcconfig"; sourceTree = "<group>"; };
-		AEE51232535473BCE22F030B /* Pods-ConferenceApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ConferenceApp.modulemap"; sourceTree = "<group>"; };
-		B21741BBAC59FED392B4BA9F /* Pods-ConferenceAppTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ConferenceAppTests-resources.sh"; sourceTree = "<group>"; };
-		B254987F8508697F91327AA3 /* Pods-ConferenceAppTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ConferenceAppTests-dummy.m"; sourceTree = "<group>"; };
-		B9151C963A06A5A25CFE30E0 /* URLTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLTransform.swift; path = ObjectMapper/Transforms/URLTransform.swift; sourceTree = "<group>"; };
-		BAA32DC607AC7201FB6C08BE /* Pods-ConferenceAppTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ConferenceAppTests-umbrella.h"; sourceTree = "<group>"; };
-		C571C1BC03199B5F657089AD /* Pods-ConferenceApp-SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ConferenceApp-SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
-		C70BB1EC956B958F13297001 /* Pods-ConferenceAppTests-ObjectMapper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "Pods-ConferenceAppTests-ObjectMapper.modulemap"; path = "../Pods-ConferenceAppTests-ObjectMapper/Pods-ConferenceAppTests-ObjectMapper.modulemap"; sourceTree = "<group>"; };
-		D2A64DB26FB0FDCD763F76F7 /* Pods-ConferenceAppTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ConferenceAppTests.modulemap"; sourceTree = "<group>"; };
-		DE2523EFA5115D604B8E5057 /* ToJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToJSON.swift; path = ObjectMapper/Core/ToJSON.swift; sourceTree = "<group>"; };
-		DF36D68944062C028C593133 /* Pods-ConferenceApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ConferenceApp-frameworks.sh"; sourceTree = "<group>"; };
-		E07B59C9D38F8A18E7EB28B4 /* ObjectMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ObjectMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E1CEFFAB2CCD37BF2D824A34 /* Pods-ConferenceApp-SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ConferenceApp-SwiftyJSON.xcconfig"; sourceTree = "<group>"; };
-		E25C02B9487C25B922F7328E /* ISO8601DateTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ISO8601DateTransform.swift; path = ObjectMapper/Transforms/ISO8601DateTransform.swift; sourceTree = "<group>"; };
-		E7B252BCF2F5F86A87B0E74E /* Pods-ConferenceApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ConferenceApp.debug.xcconfig"; sourceTree = "<group>"; };
-		EF2E72947827F67992320E9F /* Pods-ConferenceApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ConferenceApp-acknowledgements.markdown"; sourceTree = "<group>"; };
-		F0BD1ADAEEE1CA5746D4E3D8 /* Pods-ConferenceAppTests-ObjectMapper.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConferenceAppTests-ObjectMapper.xcconfig"; path = "../Pods-ConferenceAppTests-ObjectMapper/Pods-ConferenceAppTests-ObjectMapper.xcconfig"; sourceTree = "<group>"; };
-		F23F7CC69E2E10CA7D34E93E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F773C9AF5DE36B0A4D8F2EF0 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		FB2C4285F8BC6B1223ECADCA /* Pods-ConferenceAppTests-SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-ConferenceAppTests-SwiftyJSON-dummy.m"; path = "../Pods-ConferenceAppTests-SwiftyJSON/Pods-ConferenceAppTests-SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
-		FCAB70CCA5E76D5D6FCDEEB5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Pods-ConferenceAppTests-ObjectMapper/Info.plist"; sourceTree = "<group>"; };
-		FE854A3459AE4CAC208333F7 /* Pods-ConferenceApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ConferenceApp-acknowledgements.plist"; sourceTree = "<group>"; };
-		FF65235E272CA6C0AB4F356F /* CustomDateFormatTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomDateFormatTransform.swift; path = ObjectMapper/Transforms/CustomDateFormatTransform.swift; sourceTree = "<group>"; };
+		007A21A321B103A517198AE9 /* Pods-ConferenceAppTests-SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-ConferenceAppTests-SwiftyJSON-prefix.pch"; path = "../Pods-ConferenceAppTests-SwiftyJSON/Pods-ConferenceAppTests-SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
+		0393FD385FB5C299CD008EFC /* Pods-ConferenceApp-SwiftyJSON-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ConferenceApp-SwiftyJSON-Private.xcconfig"; sourceTree = "<group>"; };
+		03CB989368499CD7C404070C /* Pods-ConferenceApp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ConferenceApp-resources.sh"; sourceTree = "<group>"; };
+		03E59D60FAFFD4A745780251 /* Pods_ConferenceAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ConferenceAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0763A2A38BADA0B208362305 /* Pods-ConferenceApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ConferenceApp-dummy.m"; sourceTree = "<group>"; };
+		07C5C8E5C36BB38109B28BB1 /* Pods-ConferenceApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ConferenceApp-acknowledgements.plist"; sourceTree = "<group>"; };
+		09146BE5554694A83D580E08 /* Pods-ConferenceApp-SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ConferenceApp-SwiftyJSON.xcconfig"; sourceTree = "<group>"; };
+		1D8E79E2D3A82D06DFDFF681 /* Pods-ConferenceAppTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ConferenceAppTests-umbrella.h"; sourceTree = "<group>"; };
+		1FFBF10EF6BEBD87ADB5E68B /* Pods_ConferenceApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ConferenceApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		213FFEE8C3AD703474C08F6C /* Pods-ConferenceAppTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ConferenceAppTests.modulemap"; sourceTree = "<group>"; };
+		216DB8F2E2D43C5185DC0507 /* Pods-ConferenceAppTests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ConferenceAppTests-environment.h"; sourceTree = "<group>"; };
+		27278E2CC683F30408784185 /* Pods-ConferenceAppTests-ObjectMapper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "Pods-ConferenceAppTests-ObjectMapper.modulemap"; path = "../Pods-ConferenceAppTests-ObjectMapper/Pods-ConferenceAppTests-ObjectMapper.modulemap"; sourceTree = "<group>"; };
+		28B776B072051B8ABC42935D /* ObjectMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ObjectMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2980D0D3CEB4A4A9663EA3CB /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		29E157CBB96FE3B2EAC3CA6D /* Pods-ConferenceAppTests-SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-ConferenceAppTests-SwiftyJSON-umbrella.h"; path = "../Pods-ConferenceAppTests-SwiftyJSON/Pods-ConferenceAppTests-SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
+		322BA4322ED4C82858308A33 /* Pods-ConferenceAppTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ConferenceAppTests-dummy.m"; sourceTree = "<group>"; };
+		39E37E92A864C7232F914F13 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CAC0D9E953779DB01900A34 /* ObjectMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ObjectMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D142279782ECC10D7682861 /* Pods-ConferenceApp-SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ConferenceApp-SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
+		3E5A9DC5127F1D763569C90C /* Pods-ConferenceAppTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ConferenceAppTests-frameworks.sh"; sourceTree = "<group>"; };
+		44E74B02F0F936290022708A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		456290418D58CBDE27A55D98 /* Pods-ConferenceApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ConferenceApp.debug.xcconfig"; sourceTree = "<group>"; };
+		4AA10616E4FA686F922A358E /* Pods-ConferenceAppTests-SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-ConferenceAppTests-SwiftyJSON-dummy.m"; path = "../Pods-ConferenceAppTests-SwiftyJSON/Pods-ConferenceAppTests-SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
+		5153802AB248225D9E426F8C /* URLTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLTransform.swift; path = ObjectMapper/Transforms/URLTransform.swift; sourceTree = "<group>"; };
+		55237899C81642D48038E951 /* CustomDateFormatTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomDateFormatTransform.swift; path = ObjectMapper/Transforms/CustomDateFormatTransform.swift; sourceTree = "<group>"; };
+		5869DCC8A9FE988CF9ADDE83 /* Pods-ConferenceApp-ObjectMapper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ConferenceApp-ObjectMapper-umbrella.h"; sourceTree = "<group>"; };
+		5B4D5DA37F2931F27E97586B /* Pods-ConferenceAppTests-ObjectMapper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-ConferenceAppTests-ObjectMapper-prefix.pch"; path = "../Pods-ConferenceAppTests-ObjectMapper/Pods-ConferenceAppTests-ObjectMapper-prefix.pch"; sourceTree = "<group>"; };
+		5CC7F657236CE6FD142EFCE3 /* Pods-ConferenceAppTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ConferenceAppTests-resources.sh"; sourceTree = "<group>"; };
+		61A583274CDF9CF0CD7C8663 /* Pods-ConferenceApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ConferenceApp-umbrella.h"; sourceTree = "<group>"; };
+		649963D736CD873AB1B9DB1A /* Pods-ConferenceApp-ObjectMapper-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ConferenceApp-ObjectMapper-Private.xcconfig"; sourceTree = "<group>"; };
+		691D8D4698ED015C63EEF65D /* Pods-ConferenceApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ConferenceApp.modulemap"; sourceTree = "<group>"; };
+		6CB440D29A35777225F0F46E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Pods-ConferenceAppTests-ObjectMapper/Info.plist"; sourceTree = "<group>"; };
+		72C98D075C18B5B83758797E /* FromJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FromJSON.swift; path = ObjectMapper/Core/FromJSON.swift; sourceTree = "<group>"; };
+		7659B141FE0E33EA40464CD2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Pods-ConferenceAppTests-SwiftyJSON/Info.plist"; sourceTree = "<group>"; };
+		778B499F49E92C62B7E9615F /* ToJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToJSON.swift; path = ObjectMapper/Core/ToJSON.swift; sourceTree = "<group>"; };
+		7803D46C48F5D8F5B4F2DD7F /* Pods-ConferenceApp-ObjectMapper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ConferenceApp-ObjectMapper.modulemap"; sourceTree = "<group>"; };
+		7A7299CEADFF9A42DD5F2C70 /* EnumTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EnumTransform.swift; path = ObjectMapper/Transforms/EnumTransform.swift; sourceTree = "<group>"; };
+		80D66A856CCE8C90960A7110 /* Pods-ConferenceAppTests-SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConferenceAppTests-SwiftyJSON.xcconfig"; path = "../Pods-ConferenceAppTests-SwiftyJSON/Pods-ConferenceAppTests-SwiftyJSON.xcconfig"; sourceTree = "<group>"; };
+		817301BAF2FF0AFF73F756DA /* Pods-ConferenceAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ConferenceAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		8211041C80BB5801939B95BE /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
+		83AA72ECDFBCF6AF10A1BA95 /* Pods-ConferenceAppTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ConferenceAppTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		8638CCABE408F62D82164FCB /* Pods-ConferenceAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ConferenceAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		88BF980F594B9F9A53ACB94F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E518B844C36CE547A8C14C0 /* DateTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateTransform.swift; path = ObjectMapper/Transforms/DateTransform.swift; sourceTree = "<group>"; };
+		9770BDC92222C03BCD50DBAE /* Pods-ConferenceAppTests-SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "Pods-ConferenceAppTests-SwiftyJSON.modulemap"; path = "../Pods-ConferenceAppTests-SwiftyJSON/Pods-ConferenceAppTests-SwiftyJSON.modulemap"; sourceTree = "<group>"; };
+		990060F7177920EDCBA4A6D1 /* Pods-ConferenceApp-SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ConferenceApp-SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
+		995F24E718C23C7FC09CFE7E /* Pods-ConferenceAppTests-ObjectMapper.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConferenceAppTests-ObjectMapper.xcconfig"; path = "../Pods-ConferenceAppTests-ObjectMapper/Pods-ConferenceAppTests-ObjectMapper.xcconfig"; sourceTree = "<group>"; };
+		A0F1FA35EE89618414259DB9 /* DateFormaterTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateFormaterTransform.swift; path = ObjectMapper/Transforms/DateFormaterTransform.swift; sourceTree = "<group>"; };
+		A62214D6AE8D74E6A5E33EF7 /* Pods-ConferenceAppTests-ObjectMapper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-ConferenceAppTests-ObjectMapper-dummy.m"; path = "../Pods-ConferenceAppTests-ObjectMapper/Pods-ConferenceAppTests-ObjectMapper-dummy.m"; sourceTree = "<group>"; };
+		A63F7814C05DE9079B75B9A7 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A988B08064FEAE9645258842 /* Pods-ConferenceAppTests-ObjectMapper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-ConferenceAppTests-ObjectMapper-umbrella.h"; path = "../Pods-ConferenceAppTests-ObjectMapper/Pods-ConferenceAppTests-ObjectMapper-umbrella.h"; sourceTree = "<group>"; };
+		AC3F18B1C47D6886B229419B /* Pods-ConferenceApp-SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ConferenceApp-SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
+		AD568EB0B5814527EE12999F /* Pods-ConferenceApp-ObjectMapper.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ConferenceApp-ObjectMapper.xcconfig"; sourceTree = "<group>"; };
+		AF489416A486B6394EB96B5B /* ISO8601DateTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ISO8601DateTransform.swift; path = ObjectMapper/Transforms/ISO8601DateTransform.swift; sourceTree = "<group>"; };
+		B5DB023423B2A23668129EE3 /* Pods-ConferenceAppTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ConferenceAppTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B686CD804CBE1A8234CB9C51 /* Mapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Mapper.swift; path = ObjectMapper/Core/Mapper.swift; sourceTree = "<group>"; };
+		BA4E0722F270CEA00CBDAEC2 /* Pods-ConferenceApp-ObjectMapper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ConferenceApp-ObjectMapper-prefix.pch"; sourceTree = "<group>"; };
+		C905954C783795B11C619244 /* TransformOf.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransformOf.swift; path = ObjectMapper/Transforms/TransformOf.swift; sourceTree = "<group>"; };
+		CBC7DAFE14FD35B72EAD7009 /* Pods-ConferenceApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ConferenceApp.release.xcconfig"; sourceTree = "<group>"; };
+		CD54EEA96CC85ABD6C2BA5B4 /* Pods-ConferenceApp-SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ConferenceApp-SwiftyJSON.modulemap"; sourceTree = "<group>"; };
+		CF91C0EDAF0C25C65F5C09F5 /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = ObjectMapper/Core/Operators.swift; sourceTree = "<group>"; };
+		D1B0BBA4FDCC3F8C919B6269 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3B4B93CA4BEBE151D3B4351 /* Pods-ConferenceAppTests-SwiftyJSON-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConferenceAppTests-SwiftyJSON-Private.xcconfig"; path = "../Pods-ConferenceAppTests-SwiftyJSON/Pods-ConferenceAppTests-SwiftyJSON-Private.xcconfig"; sourceTree = "<group>"; };
+		D7876859305F5C98BBF9BED4 /* Pods-ConferenceApp-ObjectMapper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ConferenceApp-ObjectMapper-dummy.m"; sourceTree = "<group>"; };
+		E66BA827D73E7400FF2EEBFF /* Pods-ConferenceAppTests-ObjectMapper-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConferenceAppTests-ObjectMapper-Private.xcconfig"; path = "../Pods-ConferenceAppTests-ObjectMapper/Pods-ConferenceAppTests-ObjectMapper-Private.xcconfig"; sourceTree = "<group>"; };
+		E79C9319125A37239F8D0CDC /* Pods-ConferenceApp-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ConferenceApp-environment.h"; sourceTree = "<group>"; };
+		E89621864C6D0AF67C59975F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED71A3C3C2C6E3F1AF33B946 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		EF8CA5B40CE72ECD8AC06838 /* TransformType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransformType.swift; path = ObjectMapper/Transforms/TransformType.swift; sourceTree = "<group>"; };
+		F6C8DEB288880853C780B894 /* Pods-ConferenceApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ConferenceApp-frameworks.sh"; sourceTree = "<group>"; };
+		F8C911297B0C3C86FB3FA625 /* Pods-ConferenceApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ConferenceApp-acknowledgements.markdown"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		03C1D98C322DF59632DAB97F /* Frameworks */ = {
+		00A3964595174920C73610C5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				809AEFA39714F685F085023D /* Foundation.framework in Frameworks */,
+				74765A5664E5412CFB44D3B5 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5BB8A9191815BC81B27E2EB0 /* Frameworks */ = {
+		00EE68CCB9FC3B6B45F42909 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8D905B786FB343B3661ABCD /* Foundation.framework in Frameworks */,
+				1983184AA03C0C615D41E663 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		71A07086573F3A9BF80C4B97 /* Frameworks */ = {
+		5D9BBF852BB828642B0FC154 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C3342A11EE35B487A5C6685 /* Foundation.framework in Frameworks */,
+				1526DE6791D27348F82C46EC /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		76CBBE509F60C880C5CB46CA /* Frameworks */ = {
+		C0E532EF9EE30B3D32E890D0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36436F7C2EED25F1908493F1 /* Foundation.framework in Frameworks */,
+				7C1320E5BCA3CD8AF44C6F50 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B90B4385184772C7FF931714 /* Frameworks */ = {
+		E98F0D3CF8EE09923A9024AC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				305AA47D2B4CF9D41FBB7CA2 /* Foundation.framework in Frameworks */,
+				FB0A9D5B6EA7E99D55A215CD /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E8E9664D1E6E60BF177EC46A /* Frameworks */ = {
+		F4D8BEEB1A83B16E4DA132A2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97019F3C76B3067A74B89595 /* Foundation.framework in Frameworks */,
+				9D063B335359BCC522B0F50F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1CE1A9E86D5FCC7C3AC2D10E /* Pods-ConferenceApp */ = {
+		0A347253330D9D277CAA3690 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				6D61B4A3C00D41AFECBAE281 /* Info.plist */,
-				AEE51232535473BCE22F030B /* Pods-ConferenceApp.modulemap */,
-				EF2E72947827F67992320E9F /* Pods-ConferenceApp-acknowledgements.markdown */,
-				FE854A3459AE4CAC208333F7 /* Pods-ConferenceApp-acknowledgements.plist */,
-				7050A0917FDA7C57F08F4E3F /* Pods-ConferenceApp-dummy.m */,
-				0970D16D3B2D54E99ECCE6B6 /* Pods-ConferenceApp-environment.h */,
-				DF36D68944062C028C593133 /* Pods-ConferenceApp-frameworks.sh */,
-				42D8B15041878B3B2C0BF0B1 /* Pods-ConferenceApp-resources.sh */,
-				726D83D5E915F91086D767B7 /* Pods-ConferenceApp-umbrella.h */,
-				E7B252BCF2F5F86A87B0E74E /* Pods-ConferenceApp.debug.xcconfig */,
-				679E8580E26DD7CF267071AC /* Pods-ConferenceApp.release.xcconfig */,
+				9BF545DBE611B4E4C87437ED /* ObjectMapper */,
+				93FD52D089E70DF8A5119129 /* SwiftyJSON */,
 			);
-			name = "Pods-ConferenceApp";
-			path = "Target Support Files/Pods-ConferenceApp";
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		1E706705F8790B0317716322 /* Support Files */ = {
+		2C8D1265FFDCDA856D502F50 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				F23F7CC69E2E10CA7D34E93E /* Info.plist */,
-				72D8C09883135A4B8C79C01F /* Info.plist */,
-				08CA2A7DC2B091A71F0C81F2 /* Pods-ConferenceApp-SwiftyJSON.modulemap */,
-				E1CEFFAB2CCD37BF2D824A34 /* Pods-ConferenceApp-SwiftyJSON.xcconfig */,
-				ACC0115419FC0CEAB4801276 /* Pods-ConferenceApp-SwiftyJSON-Private.xcconfig */,
-				C571C1BC03199B5F657089AD /* Pods-ConferenceApp-SwiftyJSON-dummy.m */,
-				5FAB165704542ACEF75C21F7 /* Pods-ConferenceApp-SwiftyJSON-prefix.pch */,
-				66CAC3210E73FAF43BD13371 /* Pods-ConferenceApp-SwiftyJSON-umbrella.h */,
-				2E2F0452126A8B4A313243B5 /* Pods-ConferenceAppTests-SwiftyJSON.modulemap */,
-				10C45DB3D9D11826FA8718D8 /* Pods-ConferenceAppTests-SwiftyJSON.xcconfig */,
-				6BA72B4419A21054D27513BA /* Pods-ConferenceAppTests-SwiftyJSON-Private.xcconfig */,
-				FB2C4285F8BC6B1223ECADCA /* Pods-ConferenceAppTests-SwiftyJSON-dummy.m */,
-				414018C9B238BB97D4CF72DE /* Pods-ConferenceAppTests-SwiftyJSON-prefix.pch */,
-				92C0A1B03C8363F6A972030A /* Pods-ConferenceAppTests-SwiftyJSON-umbrella.h */,
+				A4E6419ECDB53953D363F6E2 /* Pods-ConferenceApp */,
+				3B4E2394DB00D6ACCC3B2D36 /* Pods-ConferenceAppTests */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/Pods-ConferenceApp-SwiftyJSON";
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		4DE8F948A984E5D8435CFF44 /* Support Files */ = {
+		30325C6A93B97302AB2E226D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				256EF21A4750BF3CBA2C838A /* Info.plist */,
-				FCAB70CCA5E76D5D6FCDEEB5 /* Info.plist */,
-				39B88AE388BAFCB1067F6575 /* Pods-ConferenceApp-ObjectMapper.modulemap */,
-				2A45484C8767ABA2860A6323 /* Pods-ConferenceApp-ObjectMapper.xcconfig */,
-				2D94CB20223B5A777049FF11 /* Pods-ConferenceApp-ObjectMapper-Private.xcconfig */,
-				19F4F4D2605E6DF9A3F7EB3B /* Pods-ConferenceApp-ObjectMapper-dummy.m */,
-				3D12DDAD8042E3BCDDDD9368 /* Pods-ConferenceApp-ObjectMapper-prefix.pch */,
-				3783B078C965C5172F33B3A8 /* Pods-ConferenceApp-ObjectMapper-umbrella.h */,
-				C70BB1EC956B958F13297001 /* Pods-ConferenceAppTests-ObjectMapper.modulemap */,
-				F0BD1ADAEEE1CA5746D4E3D8 /* Pods-ConferenceAppTests-ObjectMapper.xcconfig */,
-				1EFBAE0C29C665F05CA60F07 /* Pods-ConferenceAppTests-ObjectMapper-Private.xcconfig */,
-				3092DED213F07506A4965A6A /* Pods-ConferenceAppTests-ObjectMapper-dummy.m */,
-				35A2B74C8B6C00FFA50DE30E /* Pods-ConferenceAppTests-ObjectMapper-prefix.pch */,
-				766832099D61D309D8DA14F0 /* Pods-ConferenceAppTests-ObjectMapper-umbrella.h */,
+				3CAC0D9E953779DB01900A34 /* ObjectMapper.framework */,
+				28B776B072051B8ABC42935D /* ObjectMapper.framework */,
+				1FFBF10EF6BEBD87ADB5E68B /* Pods_ConferenceApp.framework */,
+				03E59D60FAFFD4A745780251 /* Pods_ConferenceAppTests.framework */,
+				2980D0D3CEB4A4A9663EA3CB /* SwiftyJSON.framework */,
+				39E37E92A864C7232F914F13 /* SwiftyJSON.framework */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/Pods-ConferenceApp-ObjectMapper";
+			name = Products;
 			sourceTree = "<group>";
 		};
-		70DBDFC4A25CECB6C0344C6F /* Pods-ConferenceAppTests */ = {
+		3B4E2394DB00D6ACCC3B2D36 /* Pods-ConferenceAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				3507992FE41FC54F82670387 /* Info.plist */,
-				D2A64DB26FB0FDCD763F76F7 /* Pods-ConferenceAppTests.modulemap */,
-				86969FD48AC96DC30AEDEBBF /* Pods-ConferenceAppTests-acknowledgements.markdown */,
-				06652403B933DE507842AFE9 /* Pods-ConferenceAppTests-acknowledgements.plist */,
-				B254987F8508697F91327AA3 /* Pods-ConferenceAppTests-dummy.m */,
-				13650D7A64B7D5360F9F6FD7 /* Pods-ConferenceAppTests-environment.h */,
-				5B5DBB076B291FBB2BD36164 /* Pods-ConferenceAppTests-frameworks.sh */,
-				B21741BBAC59FED392B4BA9F /* Pods-ConferenceAppTests-resources.sh */,
-				BAA32DC607AC7201FB6C08BE /* Pods-ConferenceAppTests-umbrella.h */,
-				3ABF49F91CFD32473C58809B /* Pods-ConferenceAppTests.debug.xcconfig */,
-				A53D2FCE9A92E7C3D03D097E /* Pods-ConferenceAppTests.release.xcconfig */,
+				44E74B02F0F936290022708A /* Info.plist */,
+				213FFEE8C3AD703474C08F6C /* Pods-ConferenceAppTests.modulemap */,
+				B5DB023423B2A23668129EE3 /* Pods-ConferenceAppTests-acknowledgements.markdown */,
+				83AA72ECDFBCF6AF10A1BA95 /* Pods-ConferenceAppTests-acknowledgements.plist */,
+				322BA4322ED4C82858308A33 /* Pods-ConferenceAppTests-dummy.m */,
+				216DB8F2E2D43C5185DC0507 /* Pods-ConferenceAppTests-environment.h */,
+				3E5A9DC5127F1D763569C90C /* Pods-ConferenceAppTests-frameworks.sh */,
+				5CC7F657236CE6FD142EFCE3 /* Pods-ConferenceAppTests-resources.sh */,
+				1D8E79E2D3A82D06DFDFF681 /* Pods-ConferenceAppTests-umbrella.h */,
+				8638CCABE408F62D82164FCB /* Pods-ConferenceAppTests.debug.xcconfig */,
+				817301BAF2FF0AFF73F756DA /* Pods-ConferenceAppTests.release.xcconfig */,
 			);
 			name = "Pods-ConferenceAppTests";
 			path = "Target Support Files/Pods-ConferenceAppTests";
 			sourceTree = "<group>";
 		};
-		7F5586351C6E0FE9FB6E7592 /* ObjectMapper */ = {
+		525A837B731D38874EF54723 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				FF65235E272CA6C0AB4F356F /* CustomDateFormatTransform.swift */,
-				95DA295F952F3F1F5EB53C3B /* DateFormaterTransform.swift */,
-				2E042EFFE0D1E805BCE0EFF4 /* DateTransform.swift */,
-				76AAA861C23FAA06E45A7480 /* EnumTransform.swift */,
-				5CD2FFD5F89663D618096B1B /* FromJSON.swift */,
-				E25C02B9487C25B922F7328E /* ISO8601DateTransform.swift */,
-				AC02793A5438E96C40E8959E /* Mapper.swift */,
-				4918C5C170A3C19E235A8BAA /* Operators.swift */,
-				DE2523EFA5115D604B8E5057 /* ToJSON.swift */,
-				79332051978A72F3F123124C /* TransformOf.swift */,
-				8F4141CA6FB81A748862B838 /* TransformType.swift */,
-				B9151C963A06A5A25CFE30E0 /* URLTransform.swift */,
-				4DE8F948A984E5D8435CFF44 /* Support Files */,
+				E89621864C6D0AF67C59975F /* Info.plist */,
+				6CB440D29A35777225F0F46E /* Info.plist */,
+				7803D46C48F5D8F5B4F2DD7F /* Pods-ConferenceApp-ObjectMapper.modulemap */,
+				AD568EB0B5814527EE12999F /* Pods-ConferenceApp-ObjectMapper.xcconfig */,
+				649963D736CD873AB1B9DB1A /* Pods-ConferenceApp-ObjectMapper-Private.xcconfig */,
+				D7876859305F5C98BBF9BED4 /* Pods-ConferenceApp-ObjectMapper-dummy.m */,
+				BA4E0722F270CEA00CBDAEC2 /* Pods-ConferenceApp-ObjectMapper-prefix.pch */,
+				5869DCC8A9FE988CF9ADDE83 /* Pods-ConferenceApp-ObjectMapper-umbrella.h */,
+				27278E2CC683F30408784185 /* Pods-ConferenceAppTests-ObjectMapper.modulemap */,
+				995F24E718C23C7FC09CFE7E /* Pods-ConferenceAppTests-ObjectMapper.xcconfig */,
+				E66BA827D73E7400FF2EEBFF /* Pods-ConferenceAppTests-ObjectMapper-Private.xcconfig */,
+				A62214D6AE8D74E6A5E33EF7 /* Pods-ConferenceAppTests-ObjectMapper-dummy.m */,
+				5B4D5DA37F2931F27E97586B /* Pods-ConferenceAppTests-ObjectMapper-prefix.pch */,
+				A988B08064FEAE9645258842 /* Pods-ConferenceAppTests-ObjectMapper-umbrella.h */,
 			);
-			path = ObjectMapper;
+			name = "Support Files";
+			path = "../Target Support Files/Pods-ConferenceApp-ObjectMapper";
 			sourceTree = "<group>";
 		};
-		8FB0B1EB1912C0CAE7CEFF17 /* Pods */ = {
+		93FD52D089E70DF8A5119129 /* SwiftyJSON */ = {
 			isa = PBXGroup;
 			children = (
-				7F5586351C6E0FE9FB6E7592 /* ObjectMapper */,
-				EA42DC11D8981FF195019888 /* SwiftyJSON */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		A72749676A6806C1448AFA0E /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				B211641316651DBD5C8B7B44 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		B211641316651DBD5C8B7B44 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				80CA9848BF0A9DE5C7B89FAB /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		B6C3A3FE7223AA09536E21A4 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				3664BF11B3B61A21EBCD5BC2 /* ObjectMapper.framework */,
-				E07B59C9D38F8A18E7EB28B4 /* ObjectMapper.framework */,
-				3A5B62B3164BE40E0910A980 /* Pods_ConferenceApp.framework */,
-				9B3086BBE0AB4E1C75725838 /* Pods_ConferenceAppTests.framework */,
-				4D6126FE00FAFA81C756596A /* SwiftyJSON.framework */,
-				2BC751B58218C7B8EA3F9676 /* SwiftyJSON.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		CC27558744030A747214E2C0 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				1CE1A9E86D5FCC7C3AC2D10E /* Pods-ConferenceApp */,
-				70DBDFC4A25CECB6C0344C6F /* Pods-ConferenceAppTests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		EA42DC11D8981FF195019888 /* SwiftyJSON */ = {
-			isa = PBXGroup;
-			children = (
-				36B8860F50C9EA6B2D8137B2 /* SwiftyJSON.swift */,
-				1E706705F8790B0317716322 /* Support Files */,
+				8211041C80BB5801939B95BE /* SwiftyJSON.swift */,
+				EE527C7ADB514C3C50527991 /* Support Files */,
 			);
 			path = SwiftyJSON;
 			sourceTree = "<group>";
 		};
-		F970DF50D84034E6A5D7A743 = {
+		9BF545DBE611B4E4C87437ED /* ObjectMapper */ = {
 			isa = PBXGroup;
 			children = (
-				F773C9AF5DE36B0A4D8F2EF0 /* Podfile */,
-				A72749676A6806C1448AFA0E /* Frameworks */,
-				8FB0B1EB1912C0CAE7CEFF17 /* Pods */,
-				B6C3A3FE7223AA09536E21A4 /* Products */,
-				CC27558744030A747214E2C0 /* Targets Support Files */,
+				55237899C81642D48038E951 /* CustomDateFormatTransform.swift */,
+				A0F1FA35EE89618414259DB9 /* DateFormaterTransform.swift */,
+				8E518B844C36CE547A8C14C0 /* DateTransform.swift */,
+				7A7299CEADFF9A42DD5F2C70 /* EnumTransform.swift */,
+				72C98D075C18B5B83758797E /* FromJSON.swift */,
+				AF489416A486B6394EB96B5B /* ISO8601DateTransform.swift */,
+				B686CD804CBE1A8234CB9C51 /* Mapper.swift */,
+				CF91C0EDAF0C25C65F5C09F5 /* Operators.swift */,
+				778B499F49E92C62B7E9615F /* ToJSON.swift */,
+				C905954C783795B11C619244 /* TransformOf.swift */,
+				EF8CA5B40CE72ECD8AC06838 /* TransformType.swift */,
+				5153802AB248225D9E426F8C /* URLTransform.swift */,
+				525A837B731D38874EF54723 /* Support Files */,
 			);
+			path = ObjectMapper;
+			sourceTree = "<group>";
+		};
+		A4E6419ECDB53953D363F6E2 /* Pods-ConferenceApp */ = {
+			isa = PBXGroup;
+			children = (
+				D1B0BBA4FDCC3F8C919B6269 /* Info.plist */,
+				691D8D4698ED015C63EEF65D /* Pods-ConferenceApp.modulemap */,
+				F8C911297B0C3C86FB3FA625 /* Pods-ConferenceApp-acknowledgements.markdown */,
+				07C5C8E5C36BB38109B28BB1 /* Pods-ConferenceApp-acknowledgements.plist */,
+				0763A2A38BADA0B208362305 /* Pods-ConferenceApp-dummy.m */,
+				E79C9319125A37239F8D0CDC /* Pods-ConferenceApp-environment.h */,
+				F6C8DEB288880853C780B894 /* Pods-ConferenceApp-frameworks.sh */,
+				03CB989368499CD7C404070C /* Pods-ConferenceApp-resources.sh */,
+				61A583274CDF9CF0CD7C8663 /* Pods-ConferenceApp-umbrella.h */,
+				456290418D58CBDE27A55D98 /* Pods-ConferenceApp.debug.xcconfig */,
+				CBC7DAFE14FD35B72EAD7009 /* Pods-ConferenceApp.release.xcconfig */,
+			);
+			name = "Pods-ConferenceApp";
+			path = "Target Support Files/Pods-ConferenceApp";
+			sourceTree = "<group>";
+		};
+		B5A4ACF220AE74D264DDB478 = {
+			isa = PBXGroup;
+			children = (
+				A63F7814C05DE9079B75B9A7 /* Podfile */,
+				BC1545E29F9668108AE89424 /* Frameworks */,
+				0A347253330D9D277CAA3690 /* Pods */,
+				30325C6A93B97302AB2E226D /* Products */,
+				2C8D1265FFDCDA856D502F50 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		BC1545E29F9668108AE89424 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DB357C49DBFDCEA69CC3BE63 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DB357C49DBFDCEA69CC3BE63 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				ED71A3C3C2C6E3F1AF33B946 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		EE527C7ADB514C3C50527991 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				88BF980F594B9F9A53ACB94F /* Info.plist */,
+				7659B141FE0E33EA40464CD2 /* Info.plist */,
+				CD54EEA96CC85ABD6C2BA5B4 /* Pods-ConferenceApp-SwiftyJSON.modulemap */,
+				09146BE5554694A83D580E08 /* Pods-ConferenceApp-SwiftyJSON.xcconfig */,
+				0393FD385FB5C299CD008EFC /* Pods-ConferenceApp-SwiftyJSON-Private.xcconfig */,
+				990060F7177920EDCBA4A6D1 /* Pods-ConferenceApp-SwiftyJSON-dummy.m */,
+				AC3F18B1C47D6886B229419B /* Pods-ConferenceApp-SwiftyJSON-prefix.pch */,
+				3D142279782ECC10D7682861 /* Pods-ConferenceApp-SwiftyJSON-umbrella.h */,
+				9770BDC92222C03BCD50DBAE /* Pods-ConferenceAppTests-SwiftyJSON.modulemap */,
+				80D66A856CCE8C90960A7110 /* Pods-ConferenceAppTests-SwiftyJSON.xcconfig */,
+				D3B4B93CA4BEBE151D3B4351 /* Pods-ConferenceAppTests-SwiftyJSON-Private.xcconfig */,
+				4AA10616E4FA686F922A358E /* Pods-ConferenceAppTests-SwiftyJSON-dummy.m */,
+				007A21A321B103A517198AE9 /* Pods-ConferenceAppTests-SwiftyJSON-prefix.pch */,
+				29E157CBB96FE3B2EAC3CA6D /* Pods-ConferenceAppTests-SwiftyJSON-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-ConferenceApp-SwiftyJSON";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		27DF6B4F41078BC61DBDC650 /* Headers */ = {
+		0AB04FD32B90C9BC287D6793 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9859C0CB9EF699D76E9D2613 /* Pods-ConferenceApp-ObjectMapper-umbrella.h in Headers */,
+				740FC775411B44714E611A70 /* Pods-ConferenceApp-SwiftyJSON-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		29F0982FAF62DE727EF0E323 /* Headers */ = {
+		6BA8EF013289C659B6BE986E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A4E971CAA5D551EFE94510A /* Pods-ConferenceAppTests-SwiftyJSON-umbrella.h in Headers */,
+				202B23AA338E258F1C6C8178 /* Pods-ConferenceApp-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B737792B4435E140CB4DE1BC /* Headers */ = {
+		7C712B178C467E67A6C87BC6 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4964577A9985744704249779 /* Pods-ConferenceApp-SwiftyJSON-umbrella.h in Headers */,
+				F4B7151B59F315FA76CC150F /* Pods-ConferenceAppTests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C212884B035173FB0F77F98F /* Headers */ = {
+		B284102DECC1451674896EF4 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				34330EF5881E5C961411618B /* Pods-ConferenceApp-umbrella.h in Headers */,
+				93DE04ACF97DAF889688B4A5 /* Pods-ConferenceApp-ObjectMapper-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C3838E0454514D1F39683B58 /* Headers */ = {
+		B968D90960F991FCF3FA2CF6 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0FCEE2630FE7BCB6B6907E47 /* Pods-ConferenceAppTests-ObjectMapper-umbrella.h in Headers */,
+				1B956667D5C5EA5C8E87C359 /* Pods-ConferenceAppTests-ObjectMapper-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EDF81C27C5BED5E4A8528ECA /* Headers */ = {
+		C407AB03CCF49A2489B11CE6 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4227E9A4EAD64BC9D07B4FE2 /* Pods-ConferenceAppTests-umbrella.h in Headers */,
+				30C709416D3398EB9BF14B59 /* Pods-ConferenceAppTests-SwiftyJSON-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		5B78811399FC476D09C40843 /* Pods-ConferenceApp-SwiftyJSON */ = {
+		2E9854AB79FC5AF1E5CBF462 /* Pods-ConferenceApp-ObjectMapper */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BBD97A169AE919C151E2EB94 /* Build configuration list for PBXNativeTarget "Pods-ConferenceApp-SwiftyJSON" */;
+			buildConfigurationList = ECDB3250FB709670E31CA5E3 /* Build configuration list for PBXNativeTarget "Pods-ConferenceApp-ObjectMapper" */;
 			buildPhases = (
-				CD0E042BCE836B40DE8297E9 /* Sources */,
-				03C1D98C322DF59632DAB97F /* Frameworks */,
-				B737792B4435E140CB4DE1BC /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-ConferenceApp-SwiftyJSON";
-			productName = "Pods-ConferenceApp-SwiftyJSON";
-			productReference = 4D6126FE00FAFA81C756596A /* SwiftyJSON.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		9BD48EF1E85DA48523546DFC /* Pods-ConferenceAppTests-SwiftyJSON */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9EE3CAC6BDFFC3DC5EB923F3 /* Build configuration list for PBXNativeTarget "Pods-ConferenceAppTests-SwiftyJSON" */;
-			buildPhases = (
-				605756126118AD462D4A0C2B /* Sources */,
-				76CBBE509F60C880C5CB46CA /* Frameworks */,
-				29F0982FAF62DE727EF0E323 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-ConferenceAppTests-SwiftyJSON";
-			productName = "Pods-ConferenceAppTests-SwiftyJSON";
-			productReference = 2BC751B58218C7B8EA3F9676 /* SwiftyJSON.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		C0B712DE014B3BCB8DE79422 /* Pods-ConferenceAppTests-ObjectMapper */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2013E562E4364953EB085AFD /* Build configuration list for PBXNativeTarget "Pods-ConferenceAppTests-ObjectMapper" */;
-			buildPhases = (
-				37E1469310DFE0D8C6AA43E9 /* Sources */,
-				71A07086573F3A9BF80C4B97 /* Frameworks */,
-				C3838E0454514D1F39683B58 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-ConferenceAppTests-ObjectMapper";
-			productName = "Pods-ConferenceAppTests-ObjectMapper";
-			productReference = E07B59C9D38F8A18E7EB28B4 /* ObjectMapper.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		C9C770B249B36780A95EBF5A /* Pods-ConferenceApp-ObjectMapper */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AF64E0305FA7EDDBCF4A829A /* Build configuration list for PBXNativeTarget "Pods-ConferenceApp-ObjectMapper" */;
-			buildPhases = (
-				66022EF676966E4D41BFE5AB /* Sources */,
-				5BB8A9191815BC81B27E2EB0 /* Frameworks */,
-				27DF6B4F41078BC61DBDC650 /* Headers */,
+				B90826978E9085BB3B2CA360 /* Sources */,
+				C0E532EF9EE30B3D32E890D0 /* Frameworks */,
+				B284102DECC1451674896EF4 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -498,374 +447,234 @@
 			);
 			name = "Pods-ConferenceApp-ObjectMapper";
 			productName = "Pods-ConferenceApp-ObjectMapper";
-			productReference = 3664BF11B3B61A21EBCD5BC2 /* ObjectMapper.framework */;
+			productReference = 3CAC0D9E953779DB01900A34 /* ObjectMapper.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		D882E206A93E47216F8A5BCC /* Pods-ConferenceApp */ = {
+		58797375DAF94A76EE0A3746 /* Pods-ConferenceAppTests-ObjectMapper */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 61A32B345F1D41175EA8A6A6 /* Build configuration list for PBXNativeTarget "Pods-ConferenceApp" */;
+			buildConfigurationList = 5CDCB211B619B9CF2302A328 /* Build configuration list for PBXNativeTarget "Pods-ConferenceAppTests-ObjectMapper" */;
 			buildPhases = (
-				25ED455E8239AEE774D6AF3B /* Sources */,
-				B90B4385184772C7FF931714 /* Frameworks */,
-				C212884B035173FB0F77F98F /* Headers */,
+				E42AD7E332A6576AAABCE9D2 /* Sources */,
+				5D9BBF852BB828642B0FC154 /* Frameworks */,
+				B968D90960F991FCF3FA2CF6 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				0F897C8300C92005940106D2 /* PBXTargetDependency */,
-				02D540893C90DB4854082221 /* PBXTargetDependency */,
 			);
-			name = "Pods-ConferenceApp";
-			productName = "Pods-ConferenceApp";
-			productReference = 3A5B62B3164BE40E0910A980 /* Pods_ConferenceApp.framework */;
+			name = "Pods-ConferenceAppTests-ObjectMapper";
+			productName = "Pods-ConferenceAppTests-ObjectMapper";
+			productReference = 28B776B072051B8ABC42935D /* ObjectMapper.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		DB085DCC02BB8BF163F7D683 /* Pods-ConferenceAppTests */ = {
+		8420678AC9787C1E4B4AD3CA /* Pods-ConferenceAppTests-SwiftyJSON */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 37B3980E4831263052C4827B /* Build configuration list for PBXNativeTarget "Pods-ConferenceAppTests" */;
+			buildConfigurationList = 40A9115621431F02D7423A1A /* Build configuration list for PBXNativeTarget "Pods-ConferenceAppTests-SwiftyJSON" */;
 			buildPhases = (
-				DBD9F77C8AD1A6B4E790411E /* Sources */,
-				E8E9664D1E6E60BF177EC46A /* Frameworks */,
-				EDF81C27C5BED5E4A8528ECA /* Headers */,
+				694955DCFE6396220C275576 /* Sources */,
+				00A3964595174920C73610C5 /* Frameworks */,
+				C407AB03CCF49A2489B11CE6 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				CDCDABC52AC43289A50C692F /* PBXTargetDependency */,
-				CCF891BCAC3406FC02F5C650 /* PBXTargetDependency */,
+			);
+			name = "Pods-ConferenceAppTests-SwiftyJSON";
+			productName = "Pods-ConferenceAppTests-SwiftyJSON";
+			productReference = 39E37E92A864C7232F914F13 /* SwiftyJSON.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		ACC437F4F722E739517214D1 /* Pods-ConferenceAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78971EC9766FE77C6C286EC7 /* Build configuration list for PBXNativeTarget "Pods-ConferenceAppTests" */;
+			buildPhases = (
+				555192CED695413127E69E55 /* Sources */,
+				00EE68CCB9FC3B6B45F42909 /* Frameworks */,
+				7C712B178C467E67A6C87BC6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				71D17008BB6DFDED32A138C6 /* PBXTargetDependency */,
+				72EE612583E88B614E72874D /* PBXTargetDependency */,
 			);
 			name = "Pods-ConferenceAppTests";
 			productName = "Pods-ConferenceAppTests";
-			productReference = 9B3086BBE0AB4E1C75725838 /* Pods_ConferenceAppTests.framework */;
+			productReference = 03E59D60FAFFD4A745780251 /* Pods_ConferenceAppTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B1F36857C6F17D0386026589 /* Pods-ConferenceApp-SwiftyJSON */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 996B58E7FE71DBE7BC079EE9 /* Build configuration list for PBXNativeTarget "Pods-ConferenceApp-SwiftyJSON" */;
+			buildPhases = (
+				E00E0A9BED2E431F6A0E3788 /* Sources */,
+				E98F0D3CF8EE09923A9024AC /* Frameworks */,
+				0AB04FD32B90C9BC287D6793 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-ConferenceApp-SwiftyJSON";
+			productName = "Pods-ConferenceApp-SwiftyJSON";
+			productReference = 2980D0D3CEB4A4A9663EA3CB /* SwiftyJSON.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BBAD5AEA30CB0365D3D88C1E /* Pods-ConferenceApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08EFB16F21ED3A0F207F080E /* Build configuration list for PBXNativeTarget "Pods-ConferenceApp" */;
+			buildPhases = (
+				330B962BAFAAFF03C39A4D87 /* Sources */,
+				F4D8BEEB1A83B16E4DA132A2 /* Frameworks */,
+				6BA8EF013289C659B6BE986E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				939EB0B52D287F214F72926D /* PBXTargetDependency */,
+				A9B00E325FEC9071E8B10A77 /* PBXTargetDependency */,
+			);
+			name = "Pods-ConferenceApp";
+			productName = "Pods-ConferenceApp";
+			productReference = 1FFBF10EF6BEBD87ADB5E68B /* Pods_ConferenceApp.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		F34D9128F3B0AA128713272C /* Project object */ = {
+		7E459F1AB63BD1B09359BF5F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0510;
 			};
-			buildConfigurationList = CFEE6D02A85829DF0EF57282 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = F65E3E103DF14D20984156B6 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = F970DF50D84034E6A5D7A743;
-			productRefGroup = B6C3A3FE7223AA09536E21A4 /* Products */;
+			mainGroup = B5A4ACF220AE74D264DDB478;
+			productRefGroup = 30325C6A93B97302AB2E226D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D882E206A93E47216F8A5BCC /* Pods-ConferenceApp */,
-				C9C770B249B36780A95EBF5A /* Pods-ConferenceApp-ObjectMapper */,
-				5B78811399FC476D09C40843 /* Pods-ConferenceApp-SwiftyJSON */,
-				DB085DCC02BB8BF163F7D683 /* Pods-ConferenceAppTests */,
-				C0B712DE014B3BCB8DE79422 /* Pods-ConferenceAppTests-ObjectMapper */,
-				9BD48EF1E85DA48523546DFC /* Pods-ConferenceAppTests-SwiftyJSON */,
+				BBAD5AEA30CB0365D3D88C1E /* Pods-ConferenceApp */,
+				2E9854AB79FC5AF1E5CBF462 /* Pods-ConferenceApp-ObjectMapper */,
+				B1F36857C6F17D0386026589 /* Pods-ConferenceApp-SwiftyJSON */,
+				ACC437F4F722E739517214D1 /* Pods-ConferenceAppTests */,
+				58797375DAF94A76EE0A3746 /* Pods-ConferenceAppTests-ObjectMapper */,
+				8420678AC9787C1E4B4AD3CA /* Pods-ConferenceAppTests-SwiftyJSON */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		25ED455E8239AEE774D6AF3B /* Sources */ = {
+		330B962BAFAAFF03C39A4D87 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFB013BBBE4C8ABEC6A431CB /* Pods-ConferenceApp-dummy.m in Sources */,
+				8E345E53019C8884C416BA89 /* Pods-ConferenceApp-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		37E1469310DFE0D8C6AA43E9 /* Sources */ = {
+		555192CED695413127E69E55 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB6C9FADA0C83CF5F967F0D8 /* CustomDateFormatTransform.swift in Sources */,
-				A96312684C4FEBD36C3C1758 /* DateFormaterTransform.swift in Sources */,
-				10AA4C172FF6629724352858 /* DateTransform.swift in Sources */,
-				40080CEC372EEE11767527BE /* EnumTransform.swift in Sources */,
-				493DAF87CF6B878AD707B586 /* FromJSON.swift in Sources */,
-				23721D716BF03B06CEAADF74 /* ISO8601DateTransform.swift in Sources */,
-				C5BAB408641F4CC24AAA328F /* Mapper.swift in Sources */,
-				DE9C2AFE3A8229FCECDAA7E1 /* Operators.swift in Sources */,
-				7240B9411E085426D4595F50 /* Pods-ConferenceAppTests-ObjectMapper-dummy.m in Sources */,
-				06D4C533B008DB95E963008B /* ToJSON.swift in Sources */,
-				2D73632ADED22A7BF957AF4D /* TransformOf.swift in Sources */,
-				7335AADABED930C30CB02078 /* TransformType.swift in Sources */,
-				F7AD95E394278CF1860BC17A /* URLTransform.swift in Sources */,
+				9A4D4ACEA6870969E107442D /* Pods-ConferenceAppTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		605756126118AD462D4A0C2B /* Sources */ = {
+		694955DCFE6396220C275576 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5EE2486FFFF78EEE50FFF13 /* Pods-ConferenceAppTests-SwiftyJSON-dummy.m in Sources */,
-				00BC06F7BC93060DC0A38F59 /* SwiftyJSON.swift in Sources */,
+				A2183A1FB0B1666DC45C5533 /* Pods-ConferenceAppTests-SwiftyJSON-dummy.m in Sources */,
+				0F27397E8A08861E32F04FF6 /* SwiftyJSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		66022EF676966E4D41BFE5AB /* Sources */ = {
+		B90826978E9085BB3B2CA360 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				535C3709BDCC63D8B4D0B816 /* CustomDateFormatTransform.swift in Sources */,
-				23FDF81DBD9C54F83A7C5CED /* DateFormaterTransform.swift in Sources */,
-				89805E69848CD88E927172EE /* DateTransform.swift in Sources */,
-				D73B9833BB5FC468A3548062 /* EnumTransform.swift in Sources */,
-				863C960E2D8E9B12658EEF4C /* FromJSON.swift in Sources */,
-				9BA7A1ACBC603FE9143F7948 /* ISO8601DateTransform.swift in Sources */,
-				38F875649AC844C482EBCF2C /* Mapper.swift in Sources */,
-				1B05D4713E224B71D83BDE54 /* Operators.swift in Sources */,
-				79837F867F8ACC21B81A8E89 /* Pods-ConferenceApp-ObjectMapper-dummy.m in Sources */,
-				1DF93F72F98544A37983E422 /* ToJSON.swift in Sources */,
-				30CD6BFF9233CEDDD42E6F48 /* TransformOf.swift in Sources */,
-				29D6F6FE098D92F39B11E86E /* TransformType.swift in Sources */,
-				0CB5A267DE36A1BB4DD86406 /* URLTransform.swift in Sources */,
+				82EDC320E3869F3BA56A42B2 /* CustomDateFormatTransform.swift in Sources */,
+				928FF0796A3BEA77112EFAE9 /* DateFormaterTransform.swift in Sources */,
+				4FD4F6BF9E36D5C3CE555BF1 /* DateTransform.swift in Sources */,
+				1BCCF2819DB0B98659D06DDB /* EnumTransform.swift in Sources */,
+				299343DA4E0C1BDBDA825AA7 /* FromJSON.swift in Sources */,
+				8FAD098FFD391EC3C4AA1969 /* ISO8601DateTransform.swift in Sources */,
+				8F80260D5D6A20192E7C145A /* Mapper.swift in Sources */,
+				ABAEB85BFD07EEB805697D4E /* Operators.swift in Sources */,
+				99DF81FE6ADC072E02E3B649 /* Pods-ConferenceApp-ObjectMapper-dummy.m in Sources */,
+				5F89A3E17679C25EFD8A95BE /* ToJSON.swift in Sources */,
+				1D9013155488381730F2A8EF /* TransformOf.swift in Sources */,
+				C078FBF89566177783D0CB56 /* TransformType.swift in Sources */,
+				854E52DAF9A0C76DBB860F8B /* URLTransform.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CD0E042BCE836B40DE8297E9 /* Sources */ = {
+		E00E0A9BED2E431F6A0E3788 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B0141FE8C4B67EC731068FD /* Pods-ConferenceApp-SwiftyJSON-dummy.m in Sources */,
-				29E47AAC1DDAF3B555F9B094 /* SwiftyJSON.swift in Sources */,
+				2292C890E88E8D97E8C7701B /* Pods-ConferenceApp-SwiftyJSON-dummy.m in Sources */,
+				89223291CE71924609CA9BD6 /* SwiftyJSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DBD9F77C8AD1A6B4E790411E /* Sources */ = {
+		E42AD7E332A6576AAABCE9D2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C41F9FAE29289B7401DD013 /* Pods-ConferenceAppTests-dummy.m in Sources */,
+				042B376ABA9E90F02D692B3F /* CustomDateFormatTransform.swift in Sources */,
+				5F634745AACCDBC541C6346F /* DateFormaterTransform.swift in Sources */,
+				E232508A7F2EB144FEAD2DB6 /* DateTransform.swift in Sources */,
+				49B9949885EF57101DEE1ADC /* EnumTransform.swift in Sources */,
+				69BD0D9162D36C2C9BCB8452 /* FromJSON.swift in Sources */,
+				02AB6A381E819A9A64FAAB3A /* ISO8601DateTransform.swift in Sources */,
+				0EB6E60C086A3BF080CFCB04 /* Mapper.swift in Sources */,
+				3EAC3633712055C2ADAD7C3B /* Operators.swift in Sources */,
+				1361B9D87965FDDB7E156728 /* Pods-ConferenceAppTests-ObjectMapper-dummy.m in Sources */,
+				CB86F4DB0D9FB6C079AF64EF /* ToJSON.swift in Sources */,
+				3CCBF15F4F3B64FD472C0316 /* TransformOf.swift in Sources */,
+				9551E10F745455951735678E /* TransformType.swift in Sources */,
+				D48278BD014387E2713E8EA9 /* URLTransform.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		02D540893C90DB4854082221 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-ConferenceApp-SwiftyJSON";
-			target = 5B78811399FC476D09C40843 /* Pods-ConferenceApp-SwiftyJSON */;
-			targetProxy = 351959EC84D3A556B27251F0 /* PBXContainerItemProxy */;
-		};
-		0F897C8300C92005940106D2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-ConferenceApp-ObjectMapper";
-			target = C9C770B249B36780A95EBF5A /* Pods-ConferenceApp-ObjectMapper */;
-			targetProxy = 61FE770EB7A3C91BE929A3AE /* PBXContainerItemProxy */;
-		};
-		CCF891BCAC3406FC02F5C650 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-ConferenceAppTests-SwiftyJSON";
-			target = 9BD48EF1E85DA48523546DFC /* Pods-ConferenceAppTests-SwiftyJSON */;
-			targetProxy = 4F7106E2A8080CAE02CBDC9C /* PBXContainerItemProxy */;
-		};
-		CDCDABC52AC43289A50C692F /* PBXTargetDependency */ = {
+		71D17008BB6DFDED32A138C6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-ConferenceAppTests-ObjectMapper";
-			target = C0B712DE014B3BCB8DE79422 /* Pods-ConferenceAppTests-ObjectMapper */;
-			targetProxy = 32C23677B46052244096DCF3 /* PBXContainerItemProxy */;
+			target = 58797375DAF94A76EE0A3746 /* Pods-ConferenceAppTests-ObjectMapper */;
+			targetProxy = 40D53E7FACC08B5A4190EF14 /* PBXContainerItemProxy */;
+		};
+		72EE612583E88B614E72874D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-ConferenceAppTests-SwiftyJSON";
+			target = 8420678AC9787C1E4B4AD3CA /* Pods-ConferenceAppTests-SwiftyJSON */;
+			targetProxy = 89927130B178DD8447AC89E9 /* PBXContainerItemProxy */;
+		};
+		939EB0B52D287F214F72926D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-ConferenceApp-ObjectMapper";
+			target = 2E9854AB79FC5AF1E5CBF462 /* Pods-ConferenceApp-ObjectMapper */;
+			targetProxy = 90D1F4BD3BC6AE7D06F19605 /* PBXContainerItemProxy */;
+		};
+		A9B00E325FEC9071E8B10A77 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-ConferenceApp-SwiftyJSON";
+			target = B1F36857C6F17D0386026589 /* Pods-ConferenceApp-SwiftyJSON */;
+			targetProxy = C3290BEB8EFE08B7C769412F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		118BDE6BC42259F4ADEBD1E0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2D94CB20223B5A777049FF11 /* Pods-ConferenceApp-ObjectMapper-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-ConferenceApp-ObjectMapper/Pods-ConferenceApp-ObjectMapper-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-ConferenceApp-ObjectMapper/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-ConferenceApp-ObjectMapper/Pods-ConferenceApp-ObjectMapper.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = ObjectMapper;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		1361DB0ACA2B29117F7325CD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1EFBAE0C29C665F05CA60F07 /* Pods-ConferenceAppTests-ObjectMapper-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-ConferenceAppTests-ObjectMapper/Pods-ConferenceAppTests-ObjectMapper-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-ConferenceAppTests-ObjectMapper/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-ConferenceAppTests-ObjectMapper/Pods-ConferenceAppTests-ObjectMapper.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = ObjectMapper;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		162E77948E380BCE0D65DE63 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = ACC0115419FC0CEAB4801276 /* Pods-ConferenceApp-SwiftyJSON-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-ConferenceApp-SwiftyJSON/Pods-ConferenceApp-SwiftyJSON-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-ConferenceApp-SwiftyJSON/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-ConferenceApp-SwiftyJSON/Pods-ConferenceApp-SwiftyJSON.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SwiftyJSON;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		4F9389EE25F67700B4C8BD46 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6BA72B4419A21054D27513BA /* Pods-ConferenceAppTests-SwiftyJSON-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-ConferenceAppTests-SwiftyJSON/Pods-ConferenceAppTests-SwiftyJSON-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-ConferenceAppTests-SwiftyJSON/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-ConferenceAppTests-SwiftyJSON/Pods-ConferenceAppTests-SwiftyJSON.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SwiftyJSON;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		51ADD642E12FB3145594BE3A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6BA72B4419A21054D27513BA /* Pods-ConferenceAppTests-SwiftyJSON-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-ConferenceAppTests-SwiftyJSON/Pods-ConferenceAppTests-SwiftyJSON-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-ConferenceAppTests-SwiftyJSON/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-ConferenceAppTests-SwiftyJSON/Pods-ConferenceAppTests-SwiftyJSON.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SwiftyJSON;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		6FF55ED2B4483750DC2D4BC1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 679E8580E26DD7CF267071AC /* Pods-ConferenceApp.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-ConferenceApp/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-ConferenceApp/Pods-ConferenceApp.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_ConferenceApp;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		81A8BC62EE008A1959007EEA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = ACC0115419FC0CEAB4801276 /* Pods-ConferenceApp-SwiftyJSON-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-ConferenceApp-SwiftyJSON/Pods-ConferenceApp-SwiftyJSON-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-ConferenceApp-SwiftyJSON/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-ConferenceApp-SwiftyJSON/Pods-ConferenceApp-SwiftyJSON.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SwiftyJSON;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		8B754906E9FFDFB14DF5FFCB /* Debug */ = {
+		120430C3D932FE8D7B527D94 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -904,9 +713,9 @@
 			};
 			name = Debug;
 		};
-		8C11104C5E511BD1E358709B /* Debug */ = {
+		12C420E3639D52615B97F035 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3ABF49F91CFD32473C58809B /* Pods-ConferenceAppTests.debug.xcconfig */;
+			baseConfigurationReference = 649963D736CD873AB1B9DB1A /* Pods-ConferenceApp-ObjectMapper-Private.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -915,56 +724,25 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-ConferenceAppTests/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-ConferenceApp-ObjectMapper/Pods-ConferenceApp-ObjectMapper-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-ConferenceApp-ObjectMapper/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-ConferenceAppTests/Pods-ConferenceAppTests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_ConferenceAppTests;
+				MODULEMAP_FILE = "Target Support Files/Pods-ConferenceApp-ObjectMapper/Pods-ConferenceApp-ObjectMapper.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = ObjectMapper;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
-		8FCD6E307DF013E26CDB15ED /* Debug */ = {
+		3353C0753E43111B49230ADA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E7B252BCF2F5F86A87B0E74E /* Pods-ConferenceApp.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-ConferenceApp/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-ConferenceApp/Pods-ConferenceApp.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_ConferenceApp;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		9E729BB2AC4CD5405DC17D96 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1EFBAE0C29C665F05CA60F07 /* Pods-ConferenceAppTests-ObjectMapper-Private.xcconfig */;
+			baseConfigurationReference = E66BA827D73E7400FF2EEBFF /* Pods-ConferenceAppTests-ObjectMapper-Private.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -989,36 +767,7 @@
 			};
 			name = Release;
 		};
-		A965BF0E21EA0E578789F19C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A53D2FCE9A92E7C3D03D097E /* Pods-ConferenceAppTests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-ConferenceAppTests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-ConferenceAppTests/Pods-ConferenceAppTests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_ConferenceAppTests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		CBAC5BCCEE269E9A19476270 /* Release */ = {
+		339C1389E0FB12AE1DC41278 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1052,9 +801,204 @@
 			};
 			name = Release;
 		};
-		DCC546258A8540A61E235D5D /* Release */ = {
+		62B66C28996ED87DB95FADD5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2D94CB20223B5A777049FF11 /* Pods-ConferenceApp-ObjectMapper-Private.xcconfig */;
+			baseConfigurationReference = 456290418D58CBDE27A55D98 /* Pods-ConferenceApp.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ConferenceApp/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-ConferenceApp/Pods-ConferenceApp.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_ConferenceApp;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		78176A82D69C6268C167E1DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0393FD385FB5C299CD008EFC /* Pods-ConferenceApp-SwiftyJSON-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-ConferenceApp-SwiftyJSON/Pods-ConferenceApp-SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-ConferenceApp-SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-ConferenceApp-SwiftyJSON/Pods-ConferenceApp-SwiftyJSON.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		951857448157062D252EC06B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0393FD385FB5C299CD008EFC /* Pods-ConferenceApp-SwiftyJSON-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-ConferenceApp-SwiftyJSON/Pods-ConferenceApp-SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-ConferenceApp-SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-ConferenceApp-SwiftyJSON/Pods-ConferenceApp-SwiftyJSON.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		973D0EEC4699E8E30808474B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3B4B93CA4BEBE151D3B4351 /* Pods-ConferenceAppTests-SwiftyJSON-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-ConferenceAppTests-SwiftyJSON/Pods-ConferenceAppTests-SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-ConferenceAppTests-SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-ConferenceAppTests-SwiftyJSON/Pods-ConferenceAppTests-SwiftyJSON.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9D71808491DE6B5CFADD4417 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E66BA827D73E7400FF2EEBFF /* Pods-ConferenceAppTests-ObjectMapper-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-ConferenceAppTests-ObjectMapper/Pods-ConferenceAppTests-ObjectMapper-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-ConferenceAppTests-ObjectMapper/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-ConferenceAppTests-ObjectMapper/Pods-ConferenceAppTests-ObjectMapper.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = ObjectMapper;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B2B0EAD32EF9B515E4A625BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 817301BAF2FF0AFF73F756DA /* Pods-ConferenceAppTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ConferenceAppTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-ConferenceAppTests/Pods-ConferenceAppTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_ConferenceAppTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B4CBC7FEC5080F359BFF7474 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8638CCABE408F62D82164FCB /* Pods-ConferenceAppTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ConferenceAppTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-ConferenceAppTests/Pods-ConferenceAppTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_ConferenceAppTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C7F2A7C6600CA2C10EA6E43A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 649963D736CD873AB1B9DB1A /* Pods-ConferenceApp-ObjectMapper-Private.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1069,8 +1013,64 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Pods-ConferenceApp-ObjectMapper/Pods-ConferenceApp-ObjectMapper.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = ObjectMapper;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E35ECC7B60B37B6F28BFE247 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3B4B93CA4BEBE151D3B4351 /* Pods-ConferenceAppTests-SwiftyJSON-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-ConferenceAppTests-SwiftyJSON/Pods-ConferenceAppTests-SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-ConferenceAppTests-SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-ConferenceAppTests-SwiftyJSON/Pods-ConferenceAppTests-SwiftyJSON.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E36A7B1E17F57AA6ECB95FB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBC7DAFE14FD35B72EAD7009 /* Pods-ConferenceApp.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ConferenceApp/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-ConferenceApp/Pods-ConferenceApp.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_ConferenceApp;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1082,70 +1082,70 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2013E562E4364953EB085AFD /* Build configuration list for PBXNativeTarget "Pods-ConferenceAppTests-ObjectMapper" */ = {
+		08EFB16F21ED3A0F207F080E /* Build configuration list for PBXNativeTarget "Pods-ConferenceApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1361DB0ACA2B29117F7325CD /* Debug */,
-				9E729BB2AC4CD5405DC17D96 /* Release */,
+				62B66C28996ED87DB95FADD5 /* Debug */,
+				E36A7B1E17F57AA6ECB95FB0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		37B3980E4831263052C4827B /* Build configuration list for PBXNativeTarget "Pods-ConferenceAppTests" */ = {
+		40A9115621431F02D7423A1A /* Build configuration list for PBXNativeTarget "Pods-ConferenceAppTests-SwiftyJSON" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8C11104C5E511BD1E358709B /* Debug */,
-				A965BF0E21EA0E578789F19C /* Release */,
+				E35ECC7B60B37B6F28BFE247 /* Debug */,
+				973D0EEC4699E8E30808474B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		61A32B345F1D41175EA8A6A6 /* Build configuration list for PBXNativeTarget "Pods-ConferenceApp" */ = {
+		5CDCB211B619B9CF2302A328 /* Build configuration list for PBXNativeTarget "Pods-ConferenceAppTests-ObjectMapper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8FCD6E307DF013E26CDB15ED /* Debug */,
-				6FF55ED2B4483750DC2D4BC1 /* Release */,
+				9D71808491DE6B5CFADD4417 /* Debug */,
+				3353C0753E43111B49230ADA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9EE3CAC6BDFFC3DC5EB923F3 /* Build configuration list for PBXNativeTarget "Pods-ConferenceAppTests-SwiftyJSON" */ = {
+		78971EC9766FE77C6C286EC7 /* Build configuration list for PBXNativeTarget "Pods-ConferenceAppTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				51ADD642E12FB3145594BE3A /* Debug */,
-				4F9389EE25F67700B4C8BD46 /* Release */,
+				B4CBC7FEC5080F359BFF7474 /* Debug */,
+				B2B0EAD32EF9B515E4A625BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AF64E0305FA7EDDBCF4A829A /* Build configuration list for PBXNativeTarget "Pods-ConferenceApp-ObjectMapper" */ = {
+		996B58E7FE71DBE7BC079EE9 /* Build configuration list for PBXNativeTarget "Pods-ConferenceApp-SwiftyJSON" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				118BDE6BC42259F4ADEBD1E0 /* Debug */,
-				DCC546258A8540A61E235D5D /* Release */,
+				78176A82D69C6268C167E1DA /* Debug */,
+				951857448157062D252EC06B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BBD97A169AE919C151E2EB94 /* Build configuration list for PBXNativeTarget "Pods-ConferenceApp-SwiftyJSON" */ = {
+		ECDB3250FB709670E31CA5E3 /* Build configuration list for PBXNativeTarget "Pods-ConferenceApp-ObjectMapper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				81A8BC62EE008A1959007EEA /* Debug */,
-				162E77948E380BCE0D65DE63 /* Release */,
+				C7F2A7C6600CA2C10EA6E43A /* Debug */,
+				12C420E3639D52615B97F035 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CFEE6D02A85829DF0EF57282 /* Build configuration list for PBXProject "Pods" */ = {
+		F65E3E103DF14D20984156B6 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8B754906E9FFDFB14DF5FFCB /* Debug */,
-				CBAC5BCCEE269E9A19476270 /* Release */,
+				120430C3D932FE8D7B527D94 /* Debug */,
+				339C1389E0FB12AE1DC41278 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = F34D9128F3B0AA128713272C /* Project object */;
+	rootObject = 7E459F1AB63BD1B09359BF5F /* Project object */;
 }
