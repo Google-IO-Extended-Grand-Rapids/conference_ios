@@ -10,7 +10,7 @@ import UIKit
 
 class ScheduleViewController: UITableViewController {
     
-    var eventObjects = NSMutableArray()
+    var sessionObjects = NSMutableArray()
     var conferencesDao: ConferencesDao!
     
     override func awakeFromNib() {
@@ -23,7 +23,7 @@ class ScheduleViewController: UITableViewController {
         let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
         conferencesDao = appDelegate.conferencesDao!
         
-        conferencesDao.getScheduleByConferenceId("conf_id", receivedSchedule)
+        conferencesDao.getSessionsByConferenceId("conf_id", receivedSchedule)
         //conferencesDao.getConferenceById(0, receivedConferenceById)
         
         self.navigationItem.leftBarButtonItem = self.editButtonItem()
@@ -55,9 +55,9 @@ class ScheduleViewController: UITableViewController {
         let y = sender as? Conference
         
         if (y != nil) {
-            eventObjects.insertObject(sender, atIndex: 0)
+            sessionObjects.insertObject(sender, atIndex: 0)
         } else {
-            eventObjects.insertObject(NSDate().description, atIndex: 0)
+            sessionObjects.insertObject(NSDate().description, atIndex: 0)
         }
         
         let indexPath = NSIndexPath(forRow: 0, inSection: 0)
@@ -71,13 +71,13 @@ class ScheduleViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return eventObjects.count
+        return sessionObjects.count
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as UITableViewCell
         
-        let object = eventObjects[indexPath.row] as Conference
+        let object = sessionObjects[indexPath.row] as Conference
         cell.textLabel!.text = object.name
         return cell
     }
