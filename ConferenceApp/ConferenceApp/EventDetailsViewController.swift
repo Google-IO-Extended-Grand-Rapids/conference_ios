@@ -10,6 +10,8 @@ import UIKit
 
 class EventDetailsViewController: UIViewController {
     
+    // TODO :- change this to a table view
+    
     @IBOutlet weak var eventNameLabel: UILabel!
     @IBOutlet weak var eventDateLabel: UILabel!
     
