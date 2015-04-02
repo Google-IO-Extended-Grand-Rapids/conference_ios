@@ -47,6 +47,23 @@ class ConferencesDao {
         }
     }
     
+    func getSessionsByConferenceId(conferenceId: Int, sessionsHandler: (NSArray) -> ()) {
+        makeRequestToAPI(baseURL + "/api/conference/\(conferenceId)/conferenceSessions") {
+            json in
+            
+            var arrayOfSessionObjects: [Session] = []
+            
+            if let sessionsArray = json as NSArray? {
+                for item in sessionsArray {
+                    let session = Mapper<Session>().map(item)
+                    arrayOfSessionObjects.append(session!)
+                }
+            }
+            
+            sessionsHandler(arrayOfSessionObjects)
+        }
+    }
+    
     func getConferenceById(conferenceId: Int, conferenceHandler: (Conference) -> ()) {
         makeRequestToAPI(baseURL + "api/conference/\(conferenceId)") {
             json in

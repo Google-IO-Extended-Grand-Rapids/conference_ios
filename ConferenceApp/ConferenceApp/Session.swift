@@ -34,12 +34,12 @@ class Session : Mappable {
         name            <- map["name"]
         shortDesc       <- map["shortDesc"]
         fullDesc        <- map["fullDesc"]
-        startDateTime   <- map["startDttm"]
+        startDateTime   <- (map["startDttm"], DateTransform())
         durationMinutes <- map["durationMinutes"]
         roomId          <- map["roomId"]
         conferenceId    <- map["conferenceId"]
-        createDttm      <- map["createDttm"]
-        lastUpdateDttm  <- map["lastUpdateDttm"]
+        createDttm      <- (map["createDttm"], DateTransform())
+        lastUpdateDttm  <- (map["lastUpdateDttm"], DateTransform())
     }
     
 }

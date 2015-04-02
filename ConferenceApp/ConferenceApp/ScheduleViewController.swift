@@ -23,19 +23,13 @@ class ScheduleViewController: UITableViewController {
         let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
         conferencesDao = appDelegate.conferencesDao!
         
-        conferencesDao.getSessionsByConferenceId("conf_id", receivedSchedule)
-        //conferencesDao.getConferenceById(0, receivedConferenceById)
-        
-        self.navigationItem.leftBarButtonItem = self.editButtonItem()
-        
-        let addButton = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: "insertNewObject:")
-        self.navigationItem.rightBarButtonItem = addButton
+        conferencesDao.getSessionsByConferenceId(7, receivedSessions)
     }
     
-    func receivedSchedule(conferences: NSArray) {
-        for conference in conferences {
-            if let conference = conference as? Conference {
-                insertNewObject(conference)
+    func receivedSessions(sessions: NSArray) {
+        for session in sessions {
+            if let session = session as? Session {
+                insertNewObject(session)
             }
         }
         
@@ -52,12 +46,10 @@ class ScheduleViewController: UITableViewController {
     }
     
     func insertNewObject(sender: AnyObject) {
-        let y = sender as? Conference
+        let y = sender as? Session
         
         if (y != nil) {
             sessionObjects.insertObject(sender, atIndex: 0)
-        } else {
-            sessionObjects.insertObject(NSDate().description, atIndex: 0)
         }
         
         let indexPath = NSIndexPath(forRow: 0, inSection: 0)
@@ -75,9 +67,9 @@ class ScheduleViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("SessionCell", forIndexPath: indexPath) as UITableViewCell
         
-        let object = sessionObjects[indexPath.row] as Conference
+        let object = sessionObjects[indexPath.row] as Session
         cell.textLabel!.text = object.name
         return cell
     }

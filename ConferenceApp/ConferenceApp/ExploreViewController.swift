@@ -24,12 +24,6 @@ class ExploreViewController: UITableViewController {
         conferencesDao = appDelegate.conferencesDao!
         
         conferencesDao.getAllConferences(receivedConferences)
-        //conferencesDao.getConferenceById(0, receivedConferenceById)
-        
-        self.navigationItem.leftBarButtonItem = self.editButtonItem()
-        
-        let addButton = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: "insertNewObject:")
-        self.navigationItem.rightBarButtonItem = addButton
     }
     
     func receivedConferences(conferences: NSArray) {
