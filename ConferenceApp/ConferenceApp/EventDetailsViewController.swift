@@ -8,12 +8,7 @@
 
 import UIKit
 
-class EventDetailsViewController: UIViewController {
-    
-    // TODO :- change this to a table view
-    
-    @IBOutlet weak var eventNameLabel: UILabel!
-    @IBOutlet weak var eventDateLabel: UILabel!
+class EventDetailsViewController: UITableViewController {
     
     var detailItem: Conference? {
         didSet {
@@ -24,12 +19,12 @@ class EventDetailsViewController: UIViewController {
     
     func configureView() {
         // Update the user interface for the detail item.
-        if let detail: Conference = self.detailItem {
-            if let label = self.eventNameLabel {
-                self.eventNameLabel.text = detail.name
-                self.eventDateLabel.text = "put the date here"
-            }
-        }
+//        if let detail: Conference = self.detailItem {
+//            if let label = self.eventNameLabel {
+//                self.eventNameLabel.text = detail.name
+//                self.eventDateLabel.text = "put the date here"
+//            }
+//        }
     }
     
     override func viewDidLoad() {
@@ -46,11 +41,29 @@ class EventDetailsViewController: UIViewController {
     // MARK: - Segues
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "showSchedule" {
+        if segue.identifier == "ShowSchedule" {
             NSLog("showing schedule")
                 (segue.destinationViewController as ScheduleViewController).detailItem = detailItem
             
         }
+    }
+    
+    // MARK: - Table View
+    
+    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("EventDetailCell", forIndexPath: indexPath) as UITableViewCell
+        
+        let object = detailItem as Conference?
+        cell.textLabel!.text = object?.name
+        return cell
     }
     
 }

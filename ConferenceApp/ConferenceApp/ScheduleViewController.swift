@@ -74,7 +74,7 @@ class ScheduleViewController: UITableViewController {
     // MARK: - Segues
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "showSessionDetail" {
+        if segue.identifier == "ShowSessionDetail" {
             if let indexPath = self.tableView.indexPathForSelectedRow() {
                 let object = sessionObjects[indexPath.row] as Session
                 NSLog("showing session detail")
