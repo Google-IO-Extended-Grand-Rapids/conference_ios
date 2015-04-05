@@ -17,7 +17,9 @@
 		3781C2AA1A79E99D00ADF981 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3781C2A91A79E99D00ADF981 /* Images.xcassets */; };
 		3781C2AD1A79E99D00ADF981 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3781C2AB1A79E99D00ADF981 /* LaunchScreen.xib */; };
 		3781C2B91A79E99E00ADF981 /* ConferenceAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3781C2B81A79E99E00ADF981 /* ConferenceAppTests.swift */; };
-		37AFD9B71AAD146F00AB59B5 /* CustomDateFormatTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AFD9B61AAD146F00AB59B5 /* CustomDateFormatTransform.swift */; };
+		37A103581ACD8EC300869E04 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A103571ACD8EC300869E04 /* ScheduleViewController.swift */; };
+		37A1035A1ACD92CC00869E04 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A103591ACD92CC00869E04 /* Session.swift */; };
+		37A1035C1ACDB08E00869E04 /* SessionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A1035B1ACDB08E00869E04 /* SessionDetailViewController.swift */; };
 		A1284D252AADAF10B53C6774 /* Pods_ConferenceApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6421B88FC1F98C23B7A42B9 /* Pods_ConferenceApp.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		C6E701BF9D953504A74E1028 /* Pods_ConferenceAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 568F4F33C01E8A3FD5478D90 /* Pods_ConferenceAppTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
@@ -49,7 +51,9 @@
 		3781C2B21A79E99E00ADF981 /* ConferenceAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConferenceAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3781C2B71A79E99E00ADF981 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3781C2B81A79E99E00ADF981 /* ConferenceAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConferenceAppTests.swift; sourceTree = "<group>"; };
-		37AFD9B61AAD146F00AB59B5 /* CustomDateFormatTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomDateFormatTransform.swift; sourceTree = "<group>"; };
+		37A103571ACD8EC300869E04 /* ScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
+		37A103591ACD92CC00869E04 /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		37A1035B1ACDB08E00869E04 /* SessionDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionDetailViewController.swift; sourceTree = "<group>"; };
 		568F4F33C01E8A3FD5478D90 /* Pods_ConferenceAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ConferenceAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C362A009DCA0705F7F7DAFD /* Pods-ConferenceAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConferenceAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ConferenceAppTests/Pods-ConferenceAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		BDE3B891ECEB7BABEEDE2A36 /* Pods-ConferenceApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConferenceApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ConferenceApp/Pods-ConferenceApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -81,6 +85,8 @@
 			children = (
 				3776C5301AABB9D500E676C4 /* ExploreViewController.swift */,
 				3776C5331AABBA8300E676C4 /* EventDetailsViewController.swift */,
+				37A103571ACD8EC300869E04 /* ScheduleViewController.swift */,
+				37A1035B1ACDB08E00869E04 /* SessionDetailViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -90,6 +96,7 @@
 			children = (
 				3776C5361AABBCA100E676C4 /* Conference.swift */,
 				3776C5381AABFB9800E676C4 /* Location.swift */,
+				37A103591ACD92CC00869E04 /* Session.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -128,7 +135,6 @@
 				3776C53A1AABFD8200E676C4 /* DAOs */,
 				3776C5351AABBC9300E676C4 /* Models */,
 				3776C5321AABB9DB00E676C4 /* ViewControllers */,
-				37AFD9B51AAD142700AB59B5 /* Util */,
 				3781C2A01A79E99D00ADF981 /* AppDelegate.swift */,
 				3781C2A61A79E99D00ADF981 /* Main.storyboard */,
 				3781C2A91A79E99D00ADF981 /* Images.xcassets */,
@@ -161,14 +167,6 @@
 				3781C2B71A79E99E00ADF981 /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		37AFD9B51AAD142700AB59B5 /* Util */ = {
-			isa = PBXGroup;
-			children = (
-				37AFD9B61AAD146F00AB59B5 /* CustomDateFormatTransform.swift */,
-			);
-			name = Util;
 			sourceTree = "<group>";
 		};
 		4943A9EC973376ED39326FE1 /* Pods */ = {
@@ -393,9 +391,11 @@
 				3776C5341AABBA8300E676C4 /* EventDetailsViewController.swift in Sources */,
 				3776C5311AABB9D500E676C4 /* ExploreViewController.swift in Sources */,
 				3776C53C1AABFE0E00E676C4 /* ConferencesDao.swift in Sources */,
-				37AFD9B71AAD146F00AB59B5 /* CustomDateFormatTransform.swift in Sources */,
 				3776C5391AABFB9900E676C4 /* Location.swift in Sources */,
+				37A1035C1ACDB08E00869E04 /* SessionDetailViewController.swift in Sources */,
+				37A1035A1ACD92CC00869E04 /* Session.swift in Sources */,
 				3781C2A11A79E99D00ADF981 /* AppDelegate.swift in Sources */,
+				37A103581ACD8EC300869E04 /* ScheduleViewController.swift in Sources */,
 				3776C5371AABBCA100E676C4 /* Conference.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -472,7 +472,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -508,7 +508,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
