@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="xgq-wX-vKK">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--My Events-->
@@ -201,10 +202,40 @@
                                     <outlet property="backgroundImage" destination="Ycw-R7-7dz" id="wfh-NY-qKb"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="EventDetailCell" id="6MV-Ws-JNo">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="EventDetailCell" rowHeight="105" id="6MV-Ws-JNo" customClass="EventDetailCell" customModule="ConferenceApp" customModuleProvider="target">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6MV-Ws-JNo" id="R5r-gM-4WZ">
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cba-W4-2CD">
+                                            <rect key="frame" x="214" y="59" width="172" height="38"/>
+                                            <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="172" id="vVK-Sy-ACT"/>
+                                                <constraint firstAttribute="height" constant="38" id="wmz-yC-MXU"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                            <state key="normal" title="Event Schedule">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Event Details Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dDm-Z4-kox">
+                                            <rect key="frame" x="8" y="8" width="584" height="40"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="dDm-Z4-kox" firstAttribute="top" secondItem="R5r-gM-4WZ" secondAttribute="topMargin" id="4ip-q5-HKa"/>
+                                        <constraint firstItem="dDm-Z4-kox" firstAttribute="leading" secondItem="R5r-gM-4WZ" secondAttribute="leadingMargin" id="EgR-qn-B07"/>
+                                        <constraint firstItem="cba-W4-2CD" firstAttribute="top" secondItem="dDm-Z4-kox" secondAttribute="bottom" constant="10" id="LYU-Us-C0w"/>
+                                        <constraint firstAttribute="centerX" secondItem="dDm-Z4-kox" secondAttribute="centerX" id="kLR-lX-Qmu"/>
+                                        <constraint firstItem="cba-W4-2CD" firstAttribute="bottom" secondItem="R5r-gM-4WZ" secondAttribute="bottomMargin" id="nje-BL-yLK"/>
+                                        <constraint firstAttribute="centerX" secondItem="cba-W4-2CD" secondAttribute="centerX" id="qMY-Lm-TSd"/>
+                                        <constraint firstItem="dDm-Z4-kox" firstAttribute="trailing" secondItem="R5r-gM-4WZ" secondAttribute="trailingMargin" id="x9d-IM-yKg"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <segue destination="l9q-Zv-TJO" kind="show" identifier="ShowSchedule" id="XQ8-6L-Wqr"/>
