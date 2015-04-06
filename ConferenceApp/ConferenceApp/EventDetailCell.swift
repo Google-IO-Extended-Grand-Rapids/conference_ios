@@ -11,6 +11,8 @@ import UIKit
 
 class EventDetailCell: UITableViewCell {
     
+    @IBOutlet weak var detailLabel: UILabel!
+    @IBOutlet weak var scheduleButton: UIButton!
     
     
 }

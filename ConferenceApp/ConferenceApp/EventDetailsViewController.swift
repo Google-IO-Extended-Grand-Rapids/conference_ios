@@ -62,11 +62,20 @@ class EventDetailsViewController: UITableViewController {
         }
     }
     
+    override func tableView(tableView: UITableView, estimatedHeightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        if (indexPath.section == 0) {
+            return 200
+        } else {
+            return UITableViewAutomaticDimension
+        }
+
+    }
+    
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         if (indexPath.section == 0) {
             return 200
         } else {
-            return 600
+            return UITableViewAutomaticDimension
         }
     }
     
@@ -83,10 +92,21 @@ class EventDetailsViewController: UITableViewController {
             } else {
                 cell.backgroundImage.image = UIImage(named: "GRLight.jpg")
             }
+        } else {
+            if (indexPath.row == 0) {
+                let cell = tableView.dequeueReusableCellWithIdentifier("EventDetailCell", forIndexPath: indexPath) as EventDetailCell
+                
+                cell.detailLabel.text = object.fullDesc
+                cell.scheduleButton.addTarget(self, action: "scheduleButtonPressed:", forControlEvents: UIControlEvents.TouchUpInside)
+                cell.scheduleButton.backgroundColor = UIColor(red: 40.0/255.0, green: 154.0/255.0, blue: 214.0/255.0, alpha: 1)
+                cell.scheduleButton.layer.cornerRadius = 5
+                return cell
+            } else if (indexPath.row == 1) {
+
+            } else if (indexPath.row == 2) {
+
+            }
         }
-        
-        cell.backgroundColor = .greenColor()
-        
         return cell
     }
     
@@ -116,12 +136,16 @@ class EventDetailsViewController: UITableViewController {
         durationLabel.font = UIFont .boldSystemFontOfSize(12)
         headerView .addSubview(durationLabel)
         
-        headerView.backgroundColor = UIColor(red: 81.0/255.0, green: 94.0/255.0, blue: 193.0/255.0, alpha: 1)
+        headerView.backgroundColor = UIColor(red: 99.0/255.0, green: 119.0/255.0, blue: 198.0/255.0, alpha: 1)
         
         if (section == 1) {
             return headerView
         } else {
             return nil
         }
+    }
+    
+    func scheduleButtonPressed(sender: UIButton){
+        NSLog("touched button")
     }
 }
