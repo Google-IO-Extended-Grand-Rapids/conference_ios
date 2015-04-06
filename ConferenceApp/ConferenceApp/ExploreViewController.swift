@@ -85,7 +85,7 @@ class ExploreViewController: UITableViewController {
         let object = objects[indexPath.row] as Conference
         
         let formatter = NSDateFormatter()
-        formatter.dateStyle = NSDateFormatterStyle.FullStyle
+        formatter.dateStyle = NSDateFormatterStyle.MediumStyle
         
         cell.nameLabel.text = object.name
         cell.locationLabel.text = object.location?.name
