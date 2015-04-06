@@ -102,7 +102,9 @@ class EventDetailsViewController: UITableViewController {
                 cell.scheduleButton.layer.cornerRadius = 5
                 return cell
             } else if (indexPath.row == 1) {
+                let cell = tableView.dequeueReusableCellWithIdentifier("SponsorsCell", forIndexPath: indexPath) as SponsorsCell
 
+                return cell
             } else if (indexPath.row == 2) {
 
             }
