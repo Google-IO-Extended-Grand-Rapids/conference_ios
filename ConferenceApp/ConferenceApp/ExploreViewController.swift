@@ -80,10 +80,22 @@ class ExploreViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as EventCell
         
         let object = objects[indexPath.row] as Conference
-        cell.textLabel!.text = object.name
+        
+        let formatter = NSDateFormatter()
+        formatter.dateStyle = NSDateFormatterStyle.MediumStyle
+        
+        cell.nameLabel.text = object.name
+        cell.locationLabel.text = object.location?.name
+        cell.durationLabel.text = String(format: "%@ to %@",formatter.stringFromDate(object.startDate!),formatter.stringFromDate(object.endDate!))
+        if object.id! % 2 == 0 {
+            cell.backgroundImageView.image = UIImage(named: "GRDark.jpg")
+        } else {
+            cell.backgroundImageView.image = UIImage(named: "GRLight.jpg")
+        }
+        
         return cell
     }
     
