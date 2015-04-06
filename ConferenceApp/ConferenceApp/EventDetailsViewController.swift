@@ -92,7 +92,7 @@ class EventDetailsViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         if (section == 1) {
-            return 80
+            return 70
         } else {
             return 0
         }
@@ -104,15 +104,16 @@ class EventDetailsViewController: UITableViewController {
         let formatter = NSDateFormatter()
         formatter.dateStyle = NSDateFormatterStyle.MediumStyle
         
-        let eventLabel = UILabel(frame: CGRectMake(8, 0, 592, 40))
+        let eventLabel = UILabel(frame: CGRectMake(12, 6, 588, 30))
         eventLabel.text = object.name
         eventLabel.textColor = UIColor .whiteColor()
+        eventLabel.font = UIFont .boldSystemFontOfSize(18)
         headerView .addSubview(eventLabel)
         
-        let durationLabel = UILabel(frame: CGRectMake(8, 40, 592, 40))
+        let durationLabel = UILabel(frame: CGRectMake(12, 30, 588, 30))
         durationLabel.text = String(format: "%@ to %@",formatter.stringFromDate(object.startDate!),formatter.stringFromDate(object.endDate!))
         durationLabel.textColor = UIColor .whiteColor()
-        durationLabel.font = UIFont .systemFontOfSize(12)
+        durationLabel.font = UIFont .boldSystemFontOfSize(12)
         headerView .addSubview(durationLabel)
         
         headerView.backgroundColor = UIColor(red: 81.0/255.0, green: 94.0/255.0, blue: 193.0/255.0, alpha: 1)
