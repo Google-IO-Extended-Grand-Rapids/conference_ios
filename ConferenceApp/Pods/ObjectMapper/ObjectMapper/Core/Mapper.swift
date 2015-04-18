@@ -14,8 +14,8 @@ public protocol Mappable {
 }
 
 public enum MappingType {
-	case fromJSON
-	case toJSON
+	case FromJSON
+	case ToJSON
 }
 
 /**
@@ -96,7 +96,7 @@ public final class Mapper<N: Mappable> {
 	/**
 	* Map a JSON string onto an existing object
 	*/
-	public func map(string JSONString: String, var toObject object: N) -> N {
+	public func map(JSONString: String, var toObject object: N) -> N {
 		if let JSON = parseJSONDictionary(JSONString) {
 			return map(JSON, toObject: object)
 		}
@@ -118,8 +118,8 @@ public final class Mapper<N: Mappable> {
 	* Maps a JSON dictionary to an existing object that conforms to Mappable.
 	* Usefull for those pesky objects that have crappy designated initializers like NSManagedObject
 	*/
-	public func map(JSON: [String : AnyObject], var toObject object: N) -> N {
-		let map = Map(mappingType: .fromJSON, JSONDictionary: JSON)
+	public func map(JSONDictionary: [String : AnyObject], var toObject object: N) -> N {
+		let map = Map(mappingType: .FromJSON, JSONDictionary: JSONDictionary)
 		object.mapping(map)
 		return object
 	}
@@ -129,7 +129,7 @@ public final class Mapper<N: Mappable> {
 	/**
 	* Map a JSON string to an object that conforms to Mappable
 	*/
-	public func map(string JSONString: String) -> N? {
+	public func map(JSONString: String) -> N? {
 		if let JSON = parseJSONDictionary(JSONString) {
 			return map(JSON)
 		}
@@ -150,8 +150,8 @@ public final class Mapper<N: Mappable> {
 	/**
 	* Maps a JSON dictionary to an object that conforms to Mappable
 	*/
-	public func map(JSON: [String : AnyObject]) -> N! {
-		let map = Map(mappingType: .fromJSON, JSONDictionary: JSON)
+	public func map(JSONDictionary: [String : AnyObject]) -> N? {
+		let map = Map(mappingType: .FromJSON, JSONDictionary: JSONDictionary)
 		let object = N(map)
 		return object
 	}
@@ -161,7 +161,7 @@ public final class Mapper<N: Mappable> {
 	/**
 	* Maps a JSON array to an object that conforms to Mappable
 	*/
-	public func mapArray(string JSONString: String) -> [N] {
+	public func mapArray(JSONString: String) -> [N] {
 		let parsedJSON: AnyObject? = parseJSONString(JSONString)
 
 		if let objectArray = mapArray(parsedJSON) {
@@ -191,10 +191,13 @@ public final class Mapper<N: Mappable> {
 	/**
 	* Maps an array of JSON dictionary to an array of object that conforms to Mappable
 	*/
-	public func mapArray(JSON: [[String : AnyObject]]) -> [N] {
-		return JSON.map {
+	public func mapArray(JSONArray: [[String : AnyObject]]) -> [N] {
+		return JSONArray.reduce([]) { (var values, JSON) in
 			// map every element in JSON array to type N
-			return self.map($0)
+			if let value = self.map(JSON) {
+				values.append(value)
+			}
+			return values
 		}
 	}
 
@@ -212,10 +215,15 @@ public final class Mapper<N: Mappable> {
 	/**
 	* Maps a JSON dictionary of dictionaries to a dictionary of objects that conform to Mappable.
 	*/
-	public func mapDictionary(JSON: [String : [String : AnyObject]]) -> [String : N] {
-		return JSON.map { key, value in
+	public func mapDictionary(JSONDictionary: [String : [String : AnyObject]]) -> [String : N] {
+		return reduce(JSONDictionary, [String: N]()) { (var values, element) in
+			let (key, value) = element
+
 			// map every value in dictionary to type N
-			return (key, self.map(value))
+			if let newValue = self.map(value) {
+				values[key] = newValue
+			}
+			return values
 		}
 	}
 
@@ -225,7 +233,7 @@ public final class Mapper<N: Mappable> {
 	* Maps an object that conforms to Mappable to a JSON dictionary <String : AnyObject>
 	*/
 	public func toJSON(var object: N) -> [String : AnyObject] {
-		let map = Map(mappingType: .toJSON, JSONDictionary: [:])
+		let map = Map(mappingType: .ToJSON, JSONDictionary: [:])
 		object.mapping(map)
 		return map.JSONDictionary
 	}
@@ -253,7 +261,7 @@ public final class Mapper<N: Mappable> {
 	/** 
 	* Maps an Object to a JSON string
 	*/
-	public func toJSONString(object: N, prettyPrint: Bool) -> String! {
+	public func toJSONString(object: N, prettyPrint: Bool) -> String? {
 		let JSONDict = toJSON(object)
 
 		var err: NSError?
@@ -265,7 +273,7 @@ public final class Mapper<N: Mappable> {
 			}
 
 			if let JSON = JSONData {
-				return NSString(data: JSON, encoding: NSUTF8StringEncoding)
+				return NSString(data: JSON, encoding: NSUTF8StringEncoding) as? String
 			}
 		}
 
