@@ -32,7 +32,7 @@ class SessionDetailViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         conferencesDao = appDelegate.conferencesDao!
         
         /*
@@ -61,7 +61,7 @@ class SessionDetailViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("SessionDetailCell", forIndexPath: indexPath) as UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("SessionDetailCell", forIndexPath: indexPath) as! UITableViewCell
         
         let object = detailItem as Session?
         cell.textLabel!.text = object?.name

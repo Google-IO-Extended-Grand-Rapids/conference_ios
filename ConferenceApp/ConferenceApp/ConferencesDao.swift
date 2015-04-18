@@ -20,7 +20,7 @@ class ConferencesDao {
         let task : NSURLSessionDataTask = NSURLSession.sharedSession().dataTaskWithRequest(request) {
             (data, response, error) in
             
-            let json = NSJSONSerialization.JSONObjectWithData(data, options: .MutableContainers, error: nil) as NSArray
+            let json = NSJSONSerialization.JSONObjectWithData(data, options: .MutableContainers, error: nil) as! NSArray
             
             dispatch_async(dispatch_get_main_queue(), {
                 onCompletion(json)

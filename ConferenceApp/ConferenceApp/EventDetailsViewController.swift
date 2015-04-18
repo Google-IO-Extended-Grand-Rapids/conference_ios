@@ -43,7 +43,7 @@ class EventDetailsViewController: UITableViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "ShowSchedule" {
             NSLog("showing schedule")
-                (segue.destinationViewController as ScheduleViewController).detailItem = detailItem
+                (segue.destinationViewController as! ScheduleViewController).detailItem = detailItem
             
         }
     }
@@ -80,12 +80,12 @@ class EventDetailsViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("EventDetailCell", forIndexPath: indexPath) as UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("EventDetailCell", forIndexPath: indexPath) as! UITableViewCell
         
         let object = detailItem as Conference!
         
         if (indexPath.section == 0) {
-            let cell = tableView.dequeueReusableCellWithIdentifier("BackgroundImageCell", forIndexPath: indexPath) as BackgroundImageCell
+            let cell = tableView.dequeueReusableCellWithIdentifier("BackgroundImageCell", forIndexPath: indexPath) as! BackgroundImageCell
             
             if object.id! % 2 == 0 {
                 cell.backgroundImage.image = UIImage(named: "GRDark.jpg")
@@ -94,7 +94,7 @@ class EventDetailsViewController: UITableViewController {
             }
         } else {
             if (indexPath.row == 0) {
-                let cell = tableView.dequeueReusableCellWithIdentifier("EventDetailCell", forIndexPath: indexPath) as EventDetailCell
+                let cell = tableView.dequeueReusableCellWithIdentifier("EventDetailCell", forIndexPath: indexPath) as! EventDetailCell
                 
                 cell.detailLabel.text = object.fullDesc
                 cell.scheduleButton.addTarget(self, action: "scheduleButtonPressed:", forControlEvents: UIControlEvents.TouchUpInside)
@@ -102,7 +102,7 @@ class EventDetailsViewController: UITableViewController {
                 cell.scheduleButton.layer.cornerRadius = 5
                 return cell
             } else if (indexPath.row == 1) {
-                let cell = tableView.dequeueReusableCellWithIdentifier("SponsorsCell", forIndexPath: indexPath) as SponsorsCell
+                let cell = tableView.dequeueReusableCellWithIdentifier("SponsorsCell", forIndexPath: indexPath) as! SponsorsCell
 
                 return cell
             } else if (indexPath.row == 2) {

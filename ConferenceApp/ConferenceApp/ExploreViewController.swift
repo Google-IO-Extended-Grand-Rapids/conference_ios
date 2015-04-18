@@ -20,7 +20,7 @@ class ExploreViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         conferencesDao = appDelegate.conferencesDao!
         
         conferencesDao.getAllConferences(receivedConferences)
@@ -63,8 +63,8 @@ class ExploreViewController: UITableViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "ShowDetail" {
             if let indexPath = self.tableView.indexPathForSelectedRow() {
-                let object = objects[indexPath.row] as Conference
-                (segue.destinationViewController as EventDetailsViewController).detailItem = object
+                let object = objects[indexPath.row] as! Conference
+                (segue.destinationViewController as! EventDetailsViewController).detailItem = object
             }
         }
     }
@@ -80,9 +80,9 @@ class ExploreViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as EventCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! EventCell
         
-        let object = objects[indexPath.row] as Conference
+        let object = objects[indexPath.row] as! Conference
         
         let formatter = NSDateFormatter()
         formatter.dateStyle = NSDateFormatterStyle.MediumStyle
