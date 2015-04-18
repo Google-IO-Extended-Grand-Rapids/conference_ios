@@ -3,11 +3,11 @@ platform :ios, '8.0'
 use_frameworks!
 
 target 'ConferenceApp' do
-  pod 'SwiftyJSON', '~> 2.1'
-  pod 'ObjectMapper', '~> 0.9'
+  pod 'SwiftyJSON', '~> 2.2'
+  pod 'ObjectMapper', '~> 0.10'
 end
 
 target 'ConferenceAppTests' do
-  pod 'SwiftyJSON', '~> 2.1'
-  pod 'ObjectMapper', '~> 0.9'
+  pod 'SwiftyJSON', '~> 2.2'
+  pod 'ObjectMapper', '~> 0.10'
 end

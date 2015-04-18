@@ -33,11 +33,11 @@ class ScheduleViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         conferencesDao = appDelegate.conferencesDao!
         
         if let detail: Conference = self.detailItem {
-            conferencesDao.getSessionsByConferenceId(detail.id!, receivedSessions)
+            conferencesDao.getSessionsByConferenceId(detail.id!,sessionsHandler:  receivedSessions)
         }
     }
     
@@ -76,9 +76,9 @@ class ScheduleViewController: UITableViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "ShowSessionDetail" {
             if let indexPath = self.tableView.indexPathForSelectedRow() {
-                let object = sessionObjects[indexPath.row] as Session
+                let object = sessionObjects[indexPath.row] as! Session
                 NSLog("showing session detail")
-                (segue.destinationViewController as SessionDetailViewController).detailItem = object
+                (segue.destinationViewController as! SessionDetailViewController).detailItem = object
             }
         }
     }
@@ -94,9 +94,9 @@ class ScheduleViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("SessionCell", forIndexPath: indexPath) as UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("SessionCell", forIndexPath: indexPath) as! UITableViewCell
         
-        let object = sessionObjects[indexPath.row] as Session
+        let object = sessionObjects[indexPath.row] as! Session
         cell.textLabel!.text = object.name
         return cell
     }
