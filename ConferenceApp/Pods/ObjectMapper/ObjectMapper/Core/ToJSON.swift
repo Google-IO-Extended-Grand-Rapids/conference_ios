@@ -98,7 +98,7 @@ internal final class ToJSON {
             basicType(field, key: key, dictionary: &dictionary)
         }
     }
-    
+
 	class func object<N: Mappable>(field: N, key: String, inout dictionary: [String : AnyObject]) {
 		setValue(Mapper().toJSON(field), forKey: key, dictionary: &dictionary)
 	}
