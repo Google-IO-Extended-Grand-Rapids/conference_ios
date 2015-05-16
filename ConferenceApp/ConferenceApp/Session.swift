@@ -36,12 +36,12 @@ class Session : Mappable {
         name            <- map["name"]
         shortDesc       <- map["shortDesc"]
         fullDesc        <- map["fullDesc"]
-        startDateTime   <- (map["startDttm"], DateTransform())
+        startDateTime   <- (map["startDttm"], EpochDateInMillisTransform())
         durationMinutes <- map["durationMinutes"]
         roomId          <- map["roomId"]
         conferenceId    <- map["conferenceId"]
-        createDttm      <- (map["createDttm"], DateTransform())
-        lastUpdateDttm  <- (map["lastUpdateDttm"], DateTransform())
+        createDttm      <- (map["createDttm"], EpochDateInMillisTransform())
+        lastUpdateDttm  <- (map["lastUpdateDttm"], EpochDateInMillisTransform())
     }
     
 }

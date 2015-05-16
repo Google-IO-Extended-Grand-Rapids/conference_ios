@@ -7,3 +7,13 @@
 //
 
 import Foundation
+import ObjectMapper
+
+public class EpochDateInMillisTransform: DateTransform {
+    override public func transformFromJSON(value: AnyObject?) -> NSDate? {
+        if let timeInt = value as? Double {
+            return NSDate(timeIntervalSince1970: NSTimeInterval(timeInt/1000))
+        }
+        return nil
+    }
+}
