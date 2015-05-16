@@ -1,0 +1,13 @@
+PODS:
+  - ObjectMapper (0.10)
+  - SwiftyJSON (2.2.0)
+
+DEPENDENCIES:
+  - ObjectMapper (~> 0.10)
+  - SwiftyJSON (~> 2.2)
+
+SPEC CHECKSUMS:
+  ObjectMapper: 611c411d3434485c8374000a028de87be1b6038d
+  SwiftyJSON: 0b3e6c07af17ff745e77e8e9984097b55c956e5c
+
+COCOAPODS: 0.36.3
