@@ -48,16 +48,14 @@ class ScheduleViewController: UITableViewController {
             }
         }
         
+        // TODO: Sort sessionObjects by date and time
+        // TODO: Determine the unique dates of the sessions and put it in a dateSections list
+        
         dispatch_async(dispatch_get_main_queue(), { () -> Void in
             self.tableView.reloadData()
         })
         
         NSLog("receivedSessions")
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     func insertNewObject(sender: AnyObject) {
@@ -66,9 +64,11 @@ class ScheduleViewController: UITableViewController {
         if (y != nil) {
             sessionObjects.insertObject(sender, atIndex: 0)
         }
-        
-        let indexPath = NSIndexPath(forRow: 0, inSection: 0)
-        self.tableView.insertRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
     
     // MARK: - Segues
@@ -85,6 +85,9 @@ class ScheduleViewController: UITableViewController {
     
     // MARK: - Table View
     
+    // TODO: Format the section headers
+    // TODO: Format the session cells
+    
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
@@ -96,8 +99,11 @@ class ScheduleViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("SessionCell", forIndexPath: indexPath) as! UITableViewCell
         
+        // If date is 5/28, use section 0
+        // Else use section 1
+        
         let object = sessionObjects[indexPath.row] as! Session
-        cell.textLabel!.text = object.name
+        cell.textLabel!.text = object.startDateTime?.description
         return cell
     }
 

@@ -16,6 +16,8 @@ public class DateTransform: TransformType {
 
 	public func transformFromJSON(value: AnyObject?) -> NSDate? {
 		if let timeInt = value as? Double {
+            // Assume time in milliseconds!
+            let timeInt = timeInt/1000
 			return NSDate(timeIntervalSince1970: NSTimeInterval(timeInt))
 		}
 		return nil
