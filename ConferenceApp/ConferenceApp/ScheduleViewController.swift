@@ -12,6 +12,7 @@ class ScheduleViewController: UITableViewController {
     
     var sessionObjects = [Session]()
     var conferencesDao: ConferencesDao!
+    var dateSet: Set<String> = []
     
     var detailItem: Conference? {
         didSet {
@@ -43,10 +44,18 @@ class ScheduleViewController: UITableViewController {
     
     func receivedSessions(sessions: [Session]) {
         
-        // TODO: Sort sessionObjects by date and time
+        // Sort sessionObjects by date and time
         sessionObjects = sessions.sorted({$0.startDateTime!.timeIntervalSinceNow < $1.startDateTime!.timeIntervalSinceNow})
         
-        // TODO: Determine the unique dates of the sessions and put it in a dateSections list
+        // Determine the unique dates of the sessions and put it in a dateSet list
+        var dateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "EEEE, MMMM dd"
+        
+        for session in sessionObjects {
+            dateSet.insert(dateFormatter.stringFromDate(session.startDateTime!))
+        }
+        
+        // TODO: Nevermind - need a dictionary containing two lists with a dateFormat key
         
         dispatch_async(dispatch_get_main_queue(), { () -> Void in
             self.tableView.reloadData()
@@ -78,7 +87,7 @@ class ScheduleViewController: UITableViewController {
     // TODO: Format the session cells
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 1
+        return dateSet.count
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
