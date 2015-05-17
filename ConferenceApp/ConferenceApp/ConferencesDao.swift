@@ -47,7 +47,7 @@ class ConferencesDao {
         }
     }
     
-    func getSessionsByConferenceId(conferenceId: Int, sessionsHandler: (NSArray) -> ()) {
+    func getSessionsByConferenceId(conferenceId: Int, sessionsHandler: ([Session]) -> ()) {
         makeRequestToAPI(baseURL + "/api/conference/\(conferenceId)/conferenceSessions") {
             json in
             

@@ -24,7 +24,7 @@ class Session : Mappable {
     
     // TODO :- presenterIds or list of Presenter objects please!!
     // TODO :- roomId replaced with Room object please!!
-    // TODO :- conference sesion type id missing??
+    // TODO :- conference session type id missing??
     
     required init?(_ map: Map) {
         mapping(map)
